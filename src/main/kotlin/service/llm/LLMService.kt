@@ -6,5 +6,5 @@ import cz.bestak.deepresearch.domain.services.Tool
 
 interface LLMService {
 
-    suspend fun complete(messages: List<Message>, tools: List<Tool>): LLMResponse
+    suspend fun complete(messages: List<Message>, tools: List<Tool> = emptyList()): LLMResponse
 }
