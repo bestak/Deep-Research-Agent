@@ -24,8 +24,8 @@ class DeepResearchAgent {
             initialPlanParser = InitialPlanParser()
         )
 
-        planCreator.create(query)
-
+        val res = planCreator.create(query)
+        print(res.steps)
         return ""
     }
 

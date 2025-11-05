@@ -20,6 +20,5 @@ class InitialPlanCreator(
             )
         )
         return initialPlanParser.parse(result.content)
-
     }
 }
