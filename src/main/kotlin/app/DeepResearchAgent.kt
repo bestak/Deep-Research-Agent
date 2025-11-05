@@ -1,6 +1,7 @@
 package cz.bestak.deepresearch.app
 
 import com.aallam.openai.api.http.Timeout
+import com.aallam.openai.api.model.ModelId
 import com.aallam.openai.client.OpenAI
 import cz.bestak.deepresearch.domain.parser.InitialPlanParser
 import cz.bestak.deepresearch.domain.prompts.AgentInstructions
@@ -17,8 +18,8 @@ class DeepResearchAgent {
             timeout = Timeout(socket = 60.seconds),
         )
 
-        val fastLLM = OpenAiLLMService(openAI)
-        val planCreator = InitialPlanCreator(
+        val fastLLM = OpenAiLLMService(openAI, ModelId("gpt-3.5-turbo"))
+        val planCreator = InitialPlanService(
             fastLLM = fastLLM,
             instructionPrompt = AgentInstructions.preProcessUserPrompt,
             initialPlanParser = InitialPlanParser()

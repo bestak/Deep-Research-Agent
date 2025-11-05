@@ -6,7 +6,7 @@ import cz.bestak.deepresearch.domain.model.Role
 import cz.bestak.deepresearch.domain.parser.InitialPlanParser
 import cz.bestak.deepresearch.service.llm.LLMService
 
-class InitialPlanCreator(
+class InitialPlanService(
     private val fastLLM: LLMService,
     private val instructionPrompt: String,
     private val initialPlanParser: InitialPlanParser
