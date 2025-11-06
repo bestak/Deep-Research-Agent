@@ -16,11 +16,10 @@ import com.aallam.openai.api.chat.Tool as OAITool
 import com.aallam.openai.api.chat.ToolCall as OAIToolCall
 import cz.bestak.deepresearch.domain.model.Message
 import cz.bestak.deepresearch.domain.model.ToolCall
-import cz.bestak.deepresearch.domain.services.Tool
+import cz.bestak.deepresearch.domain.services.tool.Tool
 import cz.bestak.deepresearch.service.llm.LLMService
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.json.JsonObject
-import kotlinx.serialization.json.encodeToJsonElement
 import kotlinx.serialization.json.jsonPrimitive
 
 class OpenAiLLMService(

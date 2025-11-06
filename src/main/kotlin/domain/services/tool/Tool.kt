@@ -1,4 +1,4 @@
-package cz.bestak.deepresearch.domain.services
+package cz.bestak.deepresearch.domain.services.tool
 
 import kotlinx.serialization.json.JsonElement
 

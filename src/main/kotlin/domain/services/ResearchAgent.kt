@@ -1,6 +1,7 @@
 package cz.bestak.deepresearch.domain.services
 
 import cz.bestak.deepresearch.domain.model.Message
+import cz.bestak.deepresearch.domain.services.tool.Tool
 import cz.bestak.deepresearch.service.llm.LLMService
 
 class ResearchAgent(

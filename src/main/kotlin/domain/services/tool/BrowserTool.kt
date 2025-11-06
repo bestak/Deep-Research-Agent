@@ -1,7 +1,5 @@
-package cz.bestak.deepresearch.service.browser
+package cz.bestak.deepresearch.domain.services.tool
 
-import cz.bestak.deepresearch.domain.services.Tool
-import cz.bestak.deepresearch.domain.services.ToolType
 import kotlinx.serialization.json.JsonElement
 import kotlinx.serialization.json.add
 import kotlinx.serialization.json.buildJsonObject

@@ -7,7 +7,7 @@ import cz.bestak.deepresearch.domain.model.Message
 import cz.bestak.deepresearch.domain.services.InitialPlanParser
 import cz.bestak.deepresearch.domain.prompts.AgentInstructions
 import cz.bestak.deepresearch.domain.services.ResearchAgent
-import cz.bestak.deepresearch.service.browser.BrowserTool
+import cz.bestak.deepresearch.domain.services.tool.BrowserTool
 import cz.bestak.deepresearch.service.llm.openai.OpenAiLLMService
 import io.github.cdimascio.dotenv.dotenv
 import kotlin.time.Duration.Companion.seconds

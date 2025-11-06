@@ -1,7 +1,7 @@
 package cz.bestak.deepresearch.service.llm
 
 import cz.bestak.deepresearch.domain.model.Message
-import cz.bestak.deepresearch.domain.services.Tool
+import cz.bestak.deepresearch.domain.services.tool.Tool
 
 interface LLMService {
 
