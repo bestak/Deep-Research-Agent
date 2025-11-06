@@ -1,4 +1,4 @@
-package cz.bestak.deepresearch.domain.parser
+package cz.bestak.deepresearch.domain.services
 
 import cz.bestak.deepresearch.domain.model.ResearchPlan
 import kotlinx.serialization.json.Json

@@ -1,7 +1,6 @@
 package cz.bestak.deepresearch.domain.services
 
 import cz.bestak.deepresearch.domain.model.Message
-import cz.bestak.deepresearch.domain.model.Role
 import cz.bestak.deepresearch.service.llm.LLMService
 
 class ResearchAgent(
@@ -11,25 +10,34 @@ class ResearchAgent(
 
     suspend fun run(messages: List<Message>): String {
         val currentMessages = messages.toMutableList()
-        repeat(REPEAT_COUNT) {
+        repeat(MAX_STEP_COUNT) {
             print("Running agent step...")
-            val response = llm.complete(currentMessages, tools)
-            response.toolCalls?.let { calls ->
-                calls.forEach { call ->
-                    val tool = tools.find { it.name == call.name }
-                    tool?.execute(call.arguments)?.let { toolRes ->
-                        print("Executed tool with name: ${tool.name}, and got result: $toolRes")
-                        currentMessages += Message(Role.Tool, toolRes)
+            val message = llm.complete(currentMessages, tools)
+            currentMessages += message
 
+            if (message is Message.Assistant) {
+                message.toolCalls?.let { calls ->
+                    calls.forEach { call ->
+                        val tool = tools.find { it.name == call.name }
+                        tool?.execute(call.arguments)?.let { toolRes ->
+                            print("Executed tool with name: ${tool.name}, and got result: $toolRes")
+                            currentMessages += Message.Tool(toolRes, call.toolCallId)
+                        }
                     }
                 }
-            } ?: throw Exception()// return response.content
+            }
+
+            if (message.content.contains(END_STEP_TAG)) {
+                print("Ending step, found end tag")
+                return message.content.replace(END_STEP_TAG, "")
+            }
         }
         return STEP_INVALID
     }
 
     companion object {
-        const val REPEAT_COUNT = 6
+        const val MAX_STEP_COUNT = 10
         const val STEP_INVALID = "Research step wasn't completed successfully, call limit reached."
+        const val END_STEP_TAG = "<END_OF_STEP>"
     }
 }

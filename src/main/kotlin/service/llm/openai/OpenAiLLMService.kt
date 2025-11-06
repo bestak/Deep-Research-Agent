@@ -4,23 +4,23 @@ import com.aallam.openai.api.chat.ChatCompletion
 import com.aallam.openai.api.chat.ChatCompletionRequest
 import com.aallam.openai.api.chat.ChatMessage
 import com.aallam.openai.api.chat.ChatRole
+import com.aallam.openai.api.chat.FunctionCall
 import com.aallam.openai.api.chat.FunctionTool
 import com.aallam.openai.api.core.Parameters
 import com.aallam.openai.api.chat.ToolChoice
+import com.aallam.openai.api.chat.ToolId
 import com.aallam.openai.api.chat.ToolType
-import com.aallam.openai.api.chat.function
 import com.aallam.openai.api.model.ModelId
 import com.aallam.openai.client.OpenAI
 import com.aallam.openai.api.chat.Tool as OAITool
 import com.aallam.openai.api.chat.ToolCall as OAIToolCall
-import cz.bestak.deepresearch.domain.model.LLMResponse
 import cz.bestak.deepresearch.domain.model.Message
-import cz.bestak.deepresearch.domain.model.Role
 import cz.bestak.deepresearch.domain.model.ToolCall
 import cz.bestak.deepresearch.domain.services.Tool
 import cz.bestak.deepresearch.service.llm.LLMService
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.json.JsonObject
+import kotlinx.serialization.json.encodeToJsonElement
 import kotlinx.serialization.json.jsonPrimitive
 
 class OpenAiLLMService(
@@ -28,7 +28,7 @@ class OpenAiLLMService(
     private val modelId: ModelId
 ): LLMService {
 
-    override suspend fun complete(messages: List<Message>, tools: List<Tool>): LLMResponse {
+    override suspend fun complete(messages: List<Message>, tools: List<Tool>): Message {
         val chatCompletionRequest = ChatCompletionRequest(
             model = modelId,
             messages = messages.map { it.toChatMessage() },
@@ -37,34 +37,36 @@ class OpenAiLLMService(
         )
         val completion: ChatCompletion = openAI.chatCompletion(chatCompletionRequest)
         val message = completion.choices.first().message
-        val messages = mutableListOf(Message(Role.Assistant, message.content.orEmpty()))
 
-        val toolCalls = message.toolCalls?.mapNotNull { tc ->
-            val function = tc as? OAIToolCall.Function
-            function?.let { functionCall ->
-                ToolCall(
-                    name = functionCall.function.name,
-                    arguments = parseToolArguments(tc.function.arguments)
-                )
-            }
-        }
-
-        return LLMResponse(
-            messages = messages,
-            toolCalls = toolCalls
-        )
+        return message.toMessage()
     }
 
     private fun Message.toChatMessage(): ChatMessage {
         return ChatMessage(
-            role = when (role) {
-                Role.System -> ChatRole.System
-                Role.User -> ChatRole.User
-                Role.Tool -> ChatRole.Tool
-                Role.Assistant -> ChatRole.Assistant
+            role = when (this) {
+                is Message.System -> ChatRole.System
+                is Message.User -> ChatRole.User
+                is Message.Tool -> ChatRole.Tool
+                is Message.Assistant -> ChatRole.Assistant
             },
-            content = content
+            content = content,
+            toolCalls = (this as? Message.Assistant)?.toolCalls?.map { it.toOAIToolCall() },
+            toolCallId = (this as? Message.Tool)?.toolCallId?.let { ToolId(it) }
         )
+    }
+
+    private fun ChatMessage.toMessage(): Message {
+        val content = content.orEmpty()
+        return when (role) {
+            ChatRole.System -> Message.System(content)
+            ChatRole.User -> Message.User(content)
+            ChatRole.Assistant -> {
+                val toolCalls = toolCalls?.mapNotNull { it.toToolCall() }
+                Message.Assistant(content, toolCalls)
+            }
+            ChatRole.Tool -> Message.Tool(content, toolCallId?.id.orEmpty())
+            else -> Message.System(content)
+        }
     }
 
     private fun Tool.toOAITool(): OAITool {
@@ -90,5 +92,26 @@ class OpenAiLLMService(
             // invalid JSON or unexpected structure
             emptyMap()
         }
+    }
+
+    private fun OAIToolCall.toToolCall(): ToolCall? {
+        val function = this as? OAIToolCall.Function
+        return function?.let { functionCall ->
+            ToolCall(
+                toolCallId = functionCall.id.id,
+                name = functionCall.function.name,
+                arguments = parseToolArguments(this.function.arguments)
+            )
+        }
+    }
+
+    private fun ToolCall.toOAIToolCall(): OAIToolCall {
+        return OAIToolCall.Function(
+            id = ToolId(toolCallId),
+            function = FunctionCall(
+                nameOrNull = name,
+                argumentsOrNull = Json.encodeToString(arguments)
+            )
+        )
     }
 }

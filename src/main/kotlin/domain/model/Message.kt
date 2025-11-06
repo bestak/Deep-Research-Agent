@@ -1,10 +1,16 @@
 package cz.bestak.deepresearch.domain.model
 
-data class Message(val role: Role, val content: String)
+sealed interface Message {
+    val content: String
 
-enum class Role {
-    System,
-    User,
-    Tool,
-    Assistant
+    data class Assistant(override val content: String, val toolCalls: List<ToolCall>?): Message
+
+    data class System(override val content: String): Message
+
+    data class User(override val content: String): Message
+
+    data class Tool(
+        override val content: String,
+        val toolCallId: String
+    ): Message
 }

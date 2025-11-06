@@ -97,6 +97,21 @@ object AgentInstructions {
         - If the research plan specifies structured output (table, report, summary), follow that format exactly.
         - Use bullet points or tables where appropriate for clarity.
         - Include sources and URLs when possible.
+        
+        Stop signal:
+        - Your normal response should contain your reasoning and the step result.
+        - **When the agent considers the entire research plan step finished, it must append the exact token `<END_OF_STEP>` on its own line as the last line of the message.** Nothing else may appear on that same line.
+        - Until the final step, **do not** emit `<END_OF_STEP>`.
+        - If the final result requires structured output, end the message with the structured output, then a one-line `<END_OF_STEP>` marker.
+        - Do not include `<END_OF_STEP>` inside URLs, code blocks, or inline text except as the final-line marker.
+
+        Required final structure when finishing (example):
+        - The output of this step will be used as direct input for the next agent in the chain working on the next step of the research plan.
+        - Do not include polite or conversational sentences.
+        - Be strictly factual and concise; focus only on the essential data and reasoning required for the next step.
+        - Provide structured, machine-readable content where possible (JSON, lists, or tables).
+        - Include short citations or URLs only if they are directly relevant for the next step.
+        - Then append a single line containing only: `<END_OF_STEP>`
 
         Tone and style:
         - Be precise, concise, and professional.

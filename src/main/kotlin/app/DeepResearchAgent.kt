@@ -4,8 +4,7 @@ import com.aallam.openai.api.http.Timeout
 import com.aallam.openai.api.model.ModelId
 import com.aallam.openai.client.OpenAI
 import cz.bestak.deepresearch.domain.model.Message
-import cz.bestak.deepresearch.domain.model.Role
-import cz.bestak.deepresearch.domain.parser.InitialPlanParser
+import cz.bestak.deepresearch.domain.services.InitialPlanParser
 import cz.bestak.deepresearch.domain.prompts.AgentInstructions
 import cz.bestak.deepresearch.domain.services.ResearchAgent
 import cz.bestak.deepresearch.service.browser.BrowserTool
@@ -39,8 +38,8 @@ class DeepResearchAgent {
         )
         val researchAgent = ResearchAgent(fastLLM, tools)
         val messages = listOf(
-            Message(Role.System, AgentInstructions.deepResearchSystemPrompt),
-            Message(Role.User, "Execute this step (1 / ${plan.steps.size}): ${plan.steps[0].title}: ${plan.steps[0].description}")
+            Message.System(AgentInstructions.deepResearchSystemPrompt),
+            Message.User("Execute this step (1 / ${plan.steps.size}): ${plan.steps[0].title}: ${plan.steps[0].description}")
         )
         val res = researchAgent.run(messages)
         print(res)
