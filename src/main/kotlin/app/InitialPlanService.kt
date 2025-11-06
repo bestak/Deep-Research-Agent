@@ -12,27 +12,33 @@ class InitialPlanService(
 ) {
 
     suspend fun create(userQuery: String): ResearchPlan {
-//        val result = fastLLM.complete(
-//            listOf(
-//                Message.System(instructionPrompt),
-//                Message.User(userQuery)
-//            )
-//        )
-        val res = """
-            {
-              "steps" : [ {
-                "title" : "Understand Kotlin's Coroutine Model",
-                "description" : "Research and understand how Kotlin's Coroutine model works, including concepts like suspend functions, coroutine builders, and CoroutineScope."
-              }, {
-                "title" : "Understand Python's Async/Await",
-                "description" : "Research and understand how Python's Async/Await mechanism works, including asyncio library, async functions, and event loops."
-              }, {
-                "title" : "Comparison of Syntax and Usage",
-                "description" : "Compare the syntax and usage of Kotlin's Coroutines with Python's Async/Await in terms of how concurrency and asynchronous programming are implemented."
-              }]
-            }
-        """.trimIndent()
-        return initialPlanParser.parse(res)
-//        return initialPlanParser.parse(result.messages.last().content)
+        val result = fastLLM.complete(
+            listOf(
+                Message.System(instructionPrompt),
+                Message.User(userQuery)
+            )
+        )
+//        val res = """
+//            {
+//              "steps" : [ {
+//                "title" : "Understand Kotlin's Coroutine Model",
+//                "description" : "Research and understand how Kotlin's Coroutine model works, including concepts like suspend functions, coroutine builders, and CoroutineScope."
+//              }, {
+//                "title" : "Understand Python's Async/Await",
+//                "description" : "Research and understand how Python's Async/Await mechanism works, including asyncio library, async functions, and event loops."
+//              }, {
+//                "title" : "Comparison of Syntax and Usage",
+//                "description" : "Compare the syntax and usage of Kotlin's Coroutines with Python's Async/Await in terms of how concurrency and asynchronous programming are implemented."
+//              }]
+//            }
+//        """.trimIndent()
+//        return initialPlanParser.parse(res)
+        val parsedPlan = initialPlanParser.parse(result.content)
+
+        println("[Plan] Plan created:")
+        parsedPlan.steps.forEachIndexed { index, step ->
+            println("Step #${index + 1}: ${step.title}")
+        }
+        return parsedPlan
     }
 }

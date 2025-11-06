@@ -20,7 +20,10 @@ Main agent loop:
 suspend fun main() {
     val deepResearch = DeepResearchAgent()
 
-    val query = "Compare Kotlin’s coroutine model with Python’s async/await"
+    val query = "Plan a 5-day trip to Kyoto, Japan, for someone interested in culture and food.\n" +
+            "- Find must-see sights, museums, and cultural experiences.\n" +
+            "- Identify popular local restaurants or street food areas.\n" +
+            "- Provide a suggested day-by-day itinerary that balances sightseeing and meals."
     deepResearch.run(query)
 
 

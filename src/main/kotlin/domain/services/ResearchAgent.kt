@@ -25,7 +25,6 @@ class ResearchAgent(
                         println("[Agent] Accessing tool ${tool?.name}")
 
                         tool?.execute(call.arguments)?.let { toolRes ->
-                            println("[Tool] Tool ${tool.name} result: $toolRes")
                             currentMessages += Message.Tool(toolRes, call.toolCallId)
                         }
                     }

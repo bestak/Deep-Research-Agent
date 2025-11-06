@@ -167,6 +167,6 @@ object AgentInstructions {
         - Briefly mention the different research steps that were taken (e.g., what was explored or analyzed in each phase), but focus on integrating their findings into a unified narrative.
         - Emphasize the main insights, patterns, or conclusions that emerged from the research as a whole.
         - Write in clear, accessible language suitable for a non-technical audience.
-        - Present the result as a short, well-structured report or narrative summary.
+        - Present the result as a well-structured report or narrative summary. Make sure to mention anything that you find important from any of the previous steps.
     """.trimIndent()
 }
