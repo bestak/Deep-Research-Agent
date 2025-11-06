@@ -1,6 +1,6 @@
 package cz.bestak.deepresearch.domain.parser
 
-import cz.bestak.deepresearch.domain.services.InitialPlanParser
+import cz.bestak.deepresearch.feature.agent.planner.InitialPlanParser
 import kotlin.test.Test
 import kotlin.test.assertEquals
 
