@@ -29,23 +29,6 @@ suspend fun main() {
     val query = "Compare Kotlin’s coroutine model with Python’s async/await"
     deepResearch.run(query)
 
-//
-//    print(openAI.models())
-//
-//    val chatCompletionRequest = ChatCompletionRequest(
-//        model = ModelId("gpt-3.5-turbo"),
-//        messages = listOf(
-//            ChatMessage(
-//                role = ChatRole.System,
-//                content = "You are a helpful assistant!"
-//            ),
-//            ChatMessage(
-//                role = ChatRole.User,
-//                content = "Hello! What can you do?"
-//            )
-//        ),
-//    )
-//    val completion: ChatCompletion = openAI.chatCompletion(chatCompletionRequest)
-//    print(completion.choices.first().message)
+
 
 }

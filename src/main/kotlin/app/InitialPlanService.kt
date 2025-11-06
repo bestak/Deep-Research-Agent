@@ -19,6 +19,7 @@ class InitialPlanService(
                 Message(Role.User, userQuery)
             )
         )
-        return initialPlanParser.parse(result.content)
+        return ResearchPlan(emptyList())
+//        return initialPlanParser.parse(result.content)
     }
 }

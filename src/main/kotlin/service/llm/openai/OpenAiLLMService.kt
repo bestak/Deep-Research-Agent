@@ -37,6 +37,7 @@ class OpenAiLLMService(
         )
         val completion: ChatCompletion = openAI.chatCompletion(chatCompletionRequest)
         val message = completion.choices.first().message
+        val messages = mutableListOf(Message(Role.Assistant, message.content.orEmpty()))
 
         val toolCalls = message.toolCalls?.mapNotNull { tc ->
             val function = tc as? OAIToolCall.Function
@@ -49,7 +50,7 @@ class OpenAiLLMService(
         }
 
         return LLMResponse(
-            content = completion.choices.first().message.content.orEmpty(),
+            messages = messages,
             toolCalls = toolCalls
         )
     }
@@ -60,6 +61,7 @@ class OpenAiLLMService(
                 Role.System -> ChatRole.System
                 Role.User -> ChatRole.User
                 Role.Tool -> ChatRole.Tool
+                Role.Assistant -> ChatRole.Assistant
             },
             content = content
         )
