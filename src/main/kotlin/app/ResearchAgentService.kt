@@ -28,13 +28,13 @@ class ResearchAgentService(
         val researchAgent = ResearchAgent(agentLLM, tools)
 
         val allMessages = mutableListOf<Message>(
-            Message.System(AgentInstructions.deepResearchSystemPrompt)
+            Message.System(AgentInstructions.getDeepResearchSystemPrompt(MAX_STEP_COUNT))
         )
         plan.steps.forEachIndexed { index, step ->
-            println("[Steps] Starting step ${index + 1}/${plan.steps.size}")
+            println("[Steps] Starting step ${index + 1}/${plan.steps.size} - ${step.title}")
 
             allMessages += Message.User("Execute this step (${index + 1} / ${plan.steps.size}): ${step.title}: ${step.description}")
-            val stepResult = researchAgent.run(allMessages)
+            val stepResult = researchAgent.run(allMessages, maxSteps = MAX_STEP_COUNT)
             allMessages += Message.Assistant(stepResult)
 
             println("[Steps] Finished step ${index + 1}/${plan.steps.size}")
@@ -46,4 +46,8 @@ class ResearchAgentService(
         return summarizedResult
     }
 
+
+    companion object {
+        const val MAX_STEP_COUNT = 10
+    }
 }

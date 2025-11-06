@@ -27,9 +27,7 @@ class DeepResearchAgent {
             instructionPrompt = AgentInstructions.preProcessUserPrompt,
             initialPlanParser = InitialPlanParser()
         )
-
         val plan = planCreator.create(query)
-        print("Plan created: ${plan.steps}")
 
         val agentLLM = OpenAiLLMService(openAI, ModelId("gpt-5-mini-2025-08-07"))
         val researchAgentService = ResearchAgentService(agentLLM)

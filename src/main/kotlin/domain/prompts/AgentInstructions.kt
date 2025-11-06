@@ -79,7 +79,7 @@ object AgentInstructions {
     """.trimIndent()
 
 
-    val deepResearchSystemPrompt = """
+    fun getDeepResearchSystemPrompt(singleStepAttempts: Int = 10) = """
         You are an intelligent deep research agent. Your task is to complete research steps one at a time.
         
         ## Tool Interaction Rules
@@ -111,6 +111,8 @@ object AgentInstructions {
            - Only mark the step as complete when confident the information is sufficient.  
         7. Once the step is fully complete, summarize findings clearly and concisely.  
         8. Do not proceed to the next step until instructed.
+        9. Don't offer any actions to the user, you are an agent running in the background without direct user input.
+        10. For every step, you can only take $singleStepAttempts actions. This can be using a tool or reasoning. Use them wisely.
         
         ## Formatting Rules
         
@@ -153,6 +155,7 @@ object AgentInstructions {
         
         ## Verification Rule
         
+        Don't user the `browser` tool more than 3 times per single research step.
         Before producing a final answer or appending ``<END_OF_STEP>``, verify that:
         - At least one `load_webpage` tool call result has been used when the step required external data, **or**
         - You have explicitly stated that the step did not require any external lookup.
@@ -162,11 +165,12 @@ object AgentInstructions {
 
     val summarizeResult = """
         Based on all the step results above, write a concise and user-friendly summary of the overall research.
-        - Do not include any technical details about the tools, code, or web lookups used during the process.
+        - Most importantly: Do not include any technical details about the tools, code, or web lookups used during the process or whether you reasoned.
         - The summary should read as a cohesive, natural explanation rather than separate step reports.
         - Briefly mention the different research steps that were taken (e.g., what was explored or analyzed in each phase), but focus on integrating their findings into a unified narrative.
         - Emphasize the main insights, patterns, or conclusions that emerged from the research as a whole.
         - Write in clear, accessible language suitable for a non-technical audience.
         - Present the result as a well-structured report or narrative summary. Make sure to mention anything that you find important from any of the previous steps.
+        - Mention the most important sources (along with the urls) you have used through out the research and that could be useful to the user. 
     """.trimIndent()
 }

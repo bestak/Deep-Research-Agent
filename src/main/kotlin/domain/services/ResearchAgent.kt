@@ -9,9 +9,9 @@ class ResearchAgent(
     private val tools: List<Tool>
 ) {
 
-    suspend fun run(messages: List<Message>): String {
+    suspend fun run(messages: List<Message>, maxSteps: Int = 10): String {
         val currentMessages = messages.toMutableList()
-        repeat(MAX_STEP_COUNT) {
+        repeat(maxSteps) {
             println("[Agent] Thinking...")
             val message = llm.complete(currentMessages, tools)
             currentMessages += message
@@ -40,7 +40,6 @@ class ResearchAgent(
     }
 
     companion object {
-        const val MAX_STEP_COUNT = 10
         const val STEP_INVALID = "Research step wasn't completed successfully, call limit reached."
         const val END_STEP_TAG = "<END_OF_STEP>"
     }
