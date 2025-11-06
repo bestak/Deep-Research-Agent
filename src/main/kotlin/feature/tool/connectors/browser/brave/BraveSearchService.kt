@@ -1,4 +1,4 @@
-package cz.bestak.deepresearch.service.browser.brave
+package cz.bestak.deepresearch.feature.tool.connectors.browser.brave
 
 import cz.bestak.deepresearch.feature.tool.connectors.browser.BrowserSearchService
 import cz.bestak.deepresearch.feature.tool.connectors.browser.SearchResult

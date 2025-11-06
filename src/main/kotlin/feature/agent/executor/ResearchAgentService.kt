@@ -5,13 +5,8 @@ import cz.bestak.deepresearch.feature.agent.domain.ResearchPlan
 import cz.bestak.deepresearch.feature.llm.domain.Message
 import cz.bestak.deepresearch.feature.tool.BrowserTool
 import cz.bestak.deepresearch.feature.tool.PageLoaderTool
-import cz.bestak.deepresearch.service.browser.brave.BraveSearchService
-import cz.bestak.deepresearch.service.http.KtorHttpClient
 import cz.bestak.deepresearch.feature.llm.service.LLMService
 import cz.bestak.deepresearch.feature.tool.ToolRegistry
-import cz.bestak.deepresearch.feature.tool.connectors.pageloader.HttpWebPageLoaderService
-import cz.bestak.deepresearch.feature.tool.executor.specific.BrowserToolExecutor
-import cz.bestak.deepresearch.feature.tool.executor.specific.PageLoaderToolExecutor
 
 class ResearchAgentService(
     private val toolRegistry: ToolRegistry

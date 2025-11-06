@@ -1,22 +1,21 @@
 package cz.bestak.deepresearch.feature.tool.di
 
 import cz.bestak.deepresearch.feature.tool.ToolRegistry
+import cz.bestak.deepresearch.feature.tool.connectors.browser.BrowserSearchService
 import cz.bestak.deepresearch.feature.tool.connectors.pageloader.HttpWebPageLoaderService
-import cz.bestak.deepresearch.feature.tool.executor.ToolExecutor
 import cz.bestak.deepresearch.feature.tool.executor.specific.BrowserToolExecutor
 import cz.bestak.deepresearch.feature.tool.executor.specific.PageLoaderToolExecutor
-import cz.bestak.deepresearch.service.browser.brave.BraveSearchService
-import cz.bestak.deepresearch.service.http.HttpClient
-import cz.bestak.deepresearch.service.http.KtorHttpClient
+import cz.bestak.deepresearch.feature.tool.connectors.browser.brave.BraveSearchService
+import cz.bestak.deepresearch.feature.tool.connectors.pageloader.WebPageLoaderService
 import org.koin.dsl.module
 
 val toolModule = module {
 
-    single {
+    single<BrowserSearchService> {
         BraveSearchService(get())
     }
 
-    single {
+    single<WebPageLoaderService> {
         HttpWebPageLoaderService(get())
     }
 

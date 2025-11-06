@@ -13,7 +13,8 @@ val agentModule = module {
     single {
         DeepResearchAgent(
             initialPlanService = get(),
-            researchAgentService = get()
+            researchAgentService = get(),
+            modelProvider = get()
         )
     }
 
