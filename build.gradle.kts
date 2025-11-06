@@ -23,6 +23,9 @@ dependencies {
 
     implementation("io.ktor:ktor-client-core:${ktor_version}")
     implementation("io.ktor:ktor-client-cio:${ktor_version}")
+
+    implementation(project.dependencies.platform("io.insert-koin:koin-bom:4.1.1"))
+    implementation("io.insert-koin:koin-core")
 }
 
 tasks.test {

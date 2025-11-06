@@ -13,7 +13,10 @@ import cz.bestak.deepresearch.feature.llm.service.openai.OpenAiLLMService
 import io.github.cdimascio.dotenv.dotenv
 import kotlin.time.Duration.Companion.seconds
 
-class DeepResearchAgent {
+class DeepResearchAgent(
+    private val initialPlanService: InitialPlanService,
+    private val researchAgentService: ResearchAgentService
+) {
 
     suspend fun run(query: String): String {
 
@@ -24,16 +27,10 @@ class DeepResearchAgent {
         )
 
         val fastLLM = OpenAiLLMService(openAI, ModelId("gpt-3.5-turbo"))
-        val planCreator = InitialPlanService(
-            fastLLM = fastLLM,
-            instructionPrompt = AgentInstructions.preProcessUserPrompt,
-            initialPlanParser = InitialPlanParser()
-        )
-        val plan = planCreator.create(query)
+        val plan = initialPlanService.create(fastLLM, query)
 
         val agentLLM = OpenAiLLMService(openAI, ModelId("gpt-5-mini-2025-08-07"))
-        val researchAgentService = ResearchAgentService(agentLLM)
-        val result = researchAgentService.executePlan(plan)
+        val result = researchAgentService.executePlan(agentLLM, plan)
 
         println("=".repeat(80))
         println(result)

@@ -14,27 +14,16 @@ import cz.bestak.deepresearch.feature.tool.executor.specific.BrowserToolExecutor
 import cz.bestak.deepresearch.feature.tool.executor.specific.PageLoaderToolExecutor
 
 class ResearchAgentService(
-    private val agentLLM: LLMService
+    private val toolRegistry: ToolRegistry
 ) {
 
-    suspend fun executePlan(plan: ResearchPlan): String {
-        val client = KtorHttpClient()
-        val browserSearchService = BraveSearchService(client)
-        val webPageLoaderService = HttpWebPageLoaderService(client)
-
-        val executors = listOf(
-            BrowserToolExecutor(browserSearchService),
-            PageLoaderToolExecutor(webPageLoaderService)
-        )
-
-        val registry = ToolRegistry(executors)
-
+    suspend fun executePlan(llm: LLMService, plan: ResearchPlan): String {
         val tools = listOf(
             BrowserTool(),
             PageLoaderTool()
         )
 
-        val researchAgent = ResearchAgent(agentLLM, tools, registry)
+        val researchAgent = ResearchAgent(llm, tools, toolRegistry)
 
         val allMessages = mutableListOf<Message>(
             Message.System(AgentInstructions.getDeepResearchSystemPrompt(MAX_STEP_COUNT))
