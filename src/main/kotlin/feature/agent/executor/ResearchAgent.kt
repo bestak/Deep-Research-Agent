@@ -3,10 +3,12 @@ package cz.bestak.deepresearch.feature.agent.executor
 import cz.bestak.deepresearch.feature.llm.domain.Message
 import cz.bestak.deepresearch.feature.tool.Tool
 import cz.bestak.deepresearch.feature.llm.service.LLMService
+import cz.bestak.deepresearch.feature.tool.ToolRegistry
 
 class ResearchAgent(
     private val llm: LLMService,
-    private val tools: List<Tool>
+    private val tools: List<Tool>,
+    private val registry: ToolRegistry
 ) {
 
     suspend fun run(messages: List<Message>, maxSteps: Int = 10): String {
@@ -21,10 +23,11 @@ class ResearchAgent(
             if (message is Message.Assistant) {
                 message.toolCalls?.let { calls ->
                     calls.forEach { call ->
-                        val tool = tools.find { it.name == call.name }
-                        println("[Agent] Accessing tool ${tool?.name}")
+                        val tool = tools.find { it.name == call.name } ?: return@forEach
+                        println("[Agent] Accessing tool ${tool.name}")
 
-                        tool?.execute(call.arguments)?.let { toolRes ->
+                        val executor = registry.findByName(tool.name)
+                        executor.execute(call.arguments).let { toolRes ->
                             currentMessages += Message.Tool(toolRes, call.toolCallId)
                         }
                     }

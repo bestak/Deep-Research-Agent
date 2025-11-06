@@ -8,7 +8,10 @@ import cz.bestak.deepresearch.feature.tool.PageLoaderTool
 import cz.bestak.deepresearch.service.browser.brave.BraveSearchService
 import cz.bestak.deepresearch.service.http.KtorHttpClient
 import cz.bestak.deepresearch.feature.llm.service.LLMService
+import cz.bestak.deepresearch.feature.tool.ToolRegistry
 import cz.bestak.deepresearch.feature.tool.connectors.pageloader.HttpWebPageLoaderService
+import cz.bestak.deepresearch.feature.tool.executor.specific.BrowserToolExecutor
+import cz.bestak.deepresearch.feature.tool.executor.specific.PageLoaderToolExecutor
 
 class ResearchAgentService(
     private val agentLLM: LLMService
@@ -19,12 +22,19 @@ class ResearchAgentService(
         val browserSearchService = BraveSearchService(client)
         val webPageLoaderService = HttpWebPageLoaderService(client)
 
-        val tools = listOf(
-            BrowserTool(browserSearchService),
-            PageLoaderTool(webPageLoaderService)
+        val executors = listOf(
+            BrowserToolExecutor(browserSearchService),
+            PageLoaderToolExecutor(webPageLoaderService)
         )
 
-        val researchAgent = ResearchAgent(agentLLM, tools)
+        val registry = ToolRegistry(executors)
+
+        val tools = listOf(
+            BrowserTool(),
+            PageLoaderTool()
+        )
+
+        val researchAgent = ResearchAgent(agentLLM, tools, registry)
 
         val allMessages = mutableListOf<Message>(
             Message.System(AgentInstructions.getDeepResearchSystemPrompt(MAX_STEP_COUNT))

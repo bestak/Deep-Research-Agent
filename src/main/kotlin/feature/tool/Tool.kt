@@ -10,9 +10,6 @@ interface Tool {
     val description: String
 
     fun getParameters(): JsonElement
-
-    suspend fun execute(arguments: Map<String, String>): String
-
 }
 
 class ToolType(val value: String) {
