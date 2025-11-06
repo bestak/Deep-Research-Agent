@@ -24,7 +24,6 @@ class BraveSearchService(
                     "search_lang" to "en"
                 )
             )
-            print(responseBody)
             val json = Json.parseToJsonElement(responseBody).jsonObject
             parseResponse(json)
         } catch (e: Exception) {

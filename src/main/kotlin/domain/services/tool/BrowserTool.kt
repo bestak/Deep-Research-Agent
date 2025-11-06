@@ -41,6 +41,7 @@ class BrowserTool(
         if (query.isBlank()) {
             return "Argument `query` of the tool `$name` is empty."
         }
+        println("[Browser] Searching for: $query")
         val browserResults = browserSearchService.search(query)
         return Json.encodeToString(browserResults)
     }

@@ -12,7 +12,7 @@ class ResearchAgent(
     suspend fun run(messages: List<Message>): String {
         val currentMessages = messages.toMutableList()
         repeat(MAX_STEP_COUNT) {
-            print("Running agent step...")
+            println("[Agent] Thinking...")
             val message = llm.complete(currentMessages, tools)
             currentMessages += message
 
@@ -33,7 +33,7 @@ class ResearchAgent(
             }
 
             if (message.content.contains(END_STEP_TAG)) {
-                println("Ending step, found end tag")
+                println("[Agent] Ending step, found end tag")
                 return message.content.replace(END_STEP_TAG, "")
             }
         }

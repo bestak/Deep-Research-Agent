@@ -29,13 +29,7 @@ class InitialPlanService(
               }, {
                 "title" : "Comparison of Syntax and Usage",
                 "description" : "Compare the syntax and usage of Kotlin's Coroutines with Python's Async/Await in terms of how concurrency and asynchronous programming are implemented."
-              }, {
-                "title" : "Execution Model Differences",
-                "description" : "Investigate and outline the differences in execution models between Kotlin's Coroutines and Python's Async/Await, including how they handle tasks, synchronization, and blocking operations."
-              }, {
-                "title" : "Performance and Efficiency",
-                "description" : "Explore and compare the performance and efficiency aspects of Kotlin's Coroutines and Python's Async/Await in terms of context switching, overhead, and resource utilization."
-              } ]
+              }]
             }
         """.trimIndent()
         return initialPlanParser.parse(res)

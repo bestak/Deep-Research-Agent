@@ -3,7 +3,7 @@ package cz.bestak.deepresearch.domain.model
 sealed interface Message {
     val content: String
 
-    data class Assistant(override val content: String, val toolCalls: List<ToolCall>?): Message
+    data class Assistant(override val content: String, val toolCalls: List<ToolCall>? = null): Message
 
     data class System(override val content: String): Message
 

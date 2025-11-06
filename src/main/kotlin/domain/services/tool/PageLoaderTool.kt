@@ -41,6 +41,7 @@ class PageLoaderTool(
         if (url.isBlank()) {
             return "Argument `url` of the tool `$name` is empty."
         }
+        println("[Load page] Opening page: $url")
         val browserResults = webPageLoaderService.load(url)
         return Json.encodeToString(browserResults)
     }

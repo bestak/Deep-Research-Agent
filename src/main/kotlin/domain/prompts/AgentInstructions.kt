@@ -65,6 +65,7 @@ object AgentInstructions {
         8. **Steps**
         - Break the task into discrete steps that can be executed sequentially.
         - Each step must be actionable and unambiguous.
+        - Limit yourself to a maximum of 5 steps.
         
         OUTPUT FORMAT:
         Respond only in JSON. The JSON object must include:
@@ -157,5 +158,15 @@ object AgentInstructions {
         - You have explicitly stated that the step did not require any external lookup.
         
         If neither condition is met, continue reasoning or open relevant URLs before finalizing.
+    """.trimIndent()
+
+    val summarizeResult = """
+        Based on all the step results above, write a concise and user-friendly summary of the overall research.
+        - Do not include any technical details about the tools, code, or web lookups used during the process.
+        - The summary should read as a cohesive, natural explanation rather than separate step reports.
+        - Briefly mention the different research steps that were taken (e.g., what was explored or analyzed in each phase), but focus on integrating their findings into a unified narrative.
+        - Emphasize the main insights, patterns, or conclusions that emerged from the research as a whole.
+        - Write in clear, accessible language suitable for a non-technical audience.
+        - Present the result as a short, well-structured report or narrative summary.
     """.trimIndent()
 }
