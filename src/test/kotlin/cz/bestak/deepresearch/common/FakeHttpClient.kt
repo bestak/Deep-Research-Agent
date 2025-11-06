@@ -1,4 +1,4 @@
-package cz.bestak.deepresearch.domain.parser.common
+package cz.bestak.deepresearch.common
 
 import cz.bestak.deepresearch.service.http.HttpClient
 

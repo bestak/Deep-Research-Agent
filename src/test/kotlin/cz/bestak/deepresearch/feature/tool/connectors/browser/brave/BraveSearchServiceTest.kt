@@ -1,6 +1,6 @@
-package cz.bestak.deepresearch.domain.parser.service.browser.brave
+package cz.bestak.deepresearch.feature.tool.connectors.browser.brave
 
-import cz.bestak.deepresearch.domain.parser.common.FakeHttpClient
+import cz.bestak.deepresearch.common.FakeHttpClient
 import cz.bestak.deepresearch.service.browser.brave.BraveSearchService
 import kotlinx.coroutines.runBlocking
 import kotlin.test.Test
