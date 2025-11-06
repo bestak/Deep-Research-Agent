@@ -41,8 +41,10 @@ class BraveSearchService(
                 title = rawRes["title"].toStringOrEmpty(),
                 description = rawRes["description"].toStringOrEmpty(),
                 url = rawRes["url"].toStringOrEmpty(),
-                extraSnippets = rawRes["extra_snippets"].toStringOrEmpty(),
-                clusters = rawRes["clusters"]?.jsonArray?.map {
+                extraSnippets = rawRes["extra_snippets"]?.jsonArray?.map {
+                    it.toStringOrEmpty()
+                },
+                clusters = rawRes["cluster"]?.jsonArray?.map {
                     val rawCluster = it.jsonObject
                     SearchResult.Cluster(
                         title = rawCluster["title"].toStringOrEmpty(),

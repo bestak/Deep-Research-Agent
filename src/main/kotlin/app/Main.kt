@@ -1,16 +1,8 @@
 package cz.bestak.deepresearch.app
 
-import com.aallam.openai.api.chat.ChatCompletion
-import com.aallam.openai.api.chat.ChatCompletionRequest
-import com.aallam.openai.api.chat.ChatMessage
-import com.aallam.openai.api.chat.ChatRole
-import com.aallam.openai.api.http.Timeout
-import com.aallam.openai.api.model.ModelId
-import com.aallam.openai.client.OpenAI
+import cz.bestak.deepresearch.domain.services.tool.BrowserTool
 import cz.bestak.deepresearch.service.browser.brave.BraveSearchService
-import cz.bestak.deepresearch.service.http.KtorHttpClient
-import io.github.cdimascio.dotenv.dotenv
-import kotlin.time.Duration.Companion.seconds
+import cz.bestak.deepresearch.service.http.HttpClient
 
 /*
 
@@ -28,12 +20,8 @@ Main agent loop:
 suspend fun main() {
     val deepResearch = DeepResearchAgent()
 
-//    val query = "Compare Kotlin’s coroutine model with Python’s async/await"
-//    deepResearch.run(query)
-
-    val service = BraveSearchService(KtorHttpClient())
-    val res = service.search("Kotlin Ktor")
-    print(res)
+    val query = "Compare Kotlin’s coroutine model with Python’s async/await"
+    deepResearch.run(query)
 
 
 }

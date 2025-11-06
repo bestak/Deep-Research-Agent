@@ -16,12 +16,16 @@ class ResearchAgent(
             val message = llm.complete(currentMessages, tools)
             currentMessages += message
 
+            println("[Agent] ${message.content}")
+
             if (message is Message.Assistant) {
                 message.toolCalls?.let { calls ->
                     calls.forEach { call ->
                         val tool = tools.find { it.name == call.name }
+                        println("[Agent] Accessing tool ${tool?.name}")
+
                         tool?.execute(call.arguments)?.let { toolRes ->
-                            print("Executed tool with name: ${tool.name}, and got result: $toolRes")
+                            println("[Tool] Tool ${tool.name} result: $toolRes")
                             currentMessages += Message.Tool(toolRes, call.toolCallId)
                         }
                     }
@@ -29,7 +33,7 @@ class ResearchAgent(
             }
 
             if (message.content.contains(END_STEP_TAG)) {
-                print("Ending step, found end tag")
+                println("Ending step, found end tag")
                 return message.content.replace(END_STEP_TAG, "")
             }
         }

@@ -8,6 +8,8 @@ import cz.bestak.deepresearch.domain.services.InitialPlanParser
 import cz.bestak.deepresearch.domain.prompts.AgentInstructions
 import cz.bestak.deepresearch.domain.services.ResearchAgent
 import cz.bestak.deepresearch.domain.services.tool.BrowserTool
+import cz.bestak.deepresearch.service.browser.brave.BraveSearchService
+import cz.bestak.deepresearch.service.http.KtorHttpClient
 import cz.bestak.deepresearch.service.llm.openai.OpenAiLLMService
 import io.github.cdimascio.dotenv.dotenv
 import kotlin.time.Duration.Companion.seconds
@@ -33,8 +35,10 @@ class DeepResearchAgent {
 
 //        val researchAgentService = ResearchAgentService()
 
+        val browserSearchService = BraveSearchService(KtorHttpClient())
+
         val tools = listOf(
-            BrowserTool()
+            BrowserTool(browserSearchService)
         )
         val researchAgent = ResearchAgent(fastLLM, tools)
         val messages = listOf(

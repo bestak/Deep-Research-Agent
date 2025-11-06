@@ -11,7 +11,7 @@ interface Tool {
 
     fun getParameters(): JsonElement
 
-    fun execute(arguments: Map<String, String>): String
+    suspend fun execute(arguments: Map<String, String>): String
 
 }
 
