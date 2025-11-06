@@ -12,13 +12,19 @@ class PageLoaderToolExecutor(
 
     override suspend fun execute(arguments: Map<String, String>): String {
         val url = arguments.getOrElse("url") {
-            return "No `url` argument passed for the tool `$name`."
+            return MISSING_ARGUMENT
         }
         if (url.isBlank()) {
-            return "Argument `url` of the tool `$name` is empty."
+            return ARGUMENT_EMPTY
         }
         println("[Load page] Opening page: $url")
-        val browserResults = webPageLoaderService.load(url)
-        return Json.encodeToString(browserResults)
+        val pageContent = webPageLoaderService.load(url) ?: NO_CONTENT
+        return Json.encodeToString(pageContent)
+    }
+
+    companion object {
+        const val MISSING_ARGUMENT = "No `url` argument passed for the tool `${PageLoaderTool.NAME}`."
+        const val ARGUMENT_EMPTY = "Argument `url` of the tool `${PageLoaderTool.NAME}` is empty."
+        const val NO_CONTENT = "Loading the page content was unsuccessful."
     }
 }

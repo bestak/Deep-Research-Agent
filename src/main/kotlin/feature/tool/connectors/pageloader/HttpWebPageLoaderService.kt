@@ -6,7 +6,11 @@ class HttpWebPageLoaderService(
     private val client: HttpClient
 ): WebPageLoaderService {
 
-    override suspend fun load(url: String): String {
-        return client.get(url)
+    override suspend fun load(url: String): String? {
+        return try {
+            client.get(url)
+        } catch (_: Exception) {
+            null
+        }
     }
 }
