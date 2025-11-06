@@ -18,8 +18,8 @@ class BraveSearchServiceTest {
                             "title": "Title 1",
                             "description": "Description 1",
                             "url": "https://example.com/1",
-                            "extra_snippets": "Extra 1",
-                            "clusters": [
+                            "extra_snippets": ["Extra 1"],
+                            "cluster": [
                                 {"title": "Cluster 1", "url": "https://cluster.com/1"}
                             ]
                         }
