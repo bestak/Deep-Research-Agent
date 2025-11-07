@@ -19,7 +19,7 @@ class ResearchAgentService(
 
             allMessages += Message.User(getStepIntroMessage(index, plan, step))
             val stepResult = researchAgent.run(llm, allMessages, maxSteps = MAX_STEP_COUNT)
-            allMessages += Message.Assistant(stepResult)
+            allMessages += Message.Assistant(stepResult.response)
 
             println("[Steps] Finished step ${index + 1}/${plan.steps.size}")
         }
@@ -27,7 +27,7 @@ class ResearchAgentService(
         println("[Steps] Finished all steps, summarizing results.")
         allMessages += Message.User(AgentInstructions.summarizeResult)
         val summarizedResult = researchAgent.run(llm, allMessages, maxSteps = MAX_STEP_COUNT)
-        return summarizedResult
+        return summarizedResult.response
     }
 
     fun getStepIntroMessage(index: Int, plan: ResearchPlan, step: ResearchStep): String {

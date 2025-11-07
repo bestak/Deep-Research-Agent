@@ -208,4 +208,8 @@ object AgentInstructions {
         - The text should be **comprehensive and engaging**, giving the user a full understanding of the research topic.  
         - Aim for depth and coherence over brevity—this should feel like a **complete, polished research summary**, not a short overview.
     """.trimIndent()
+
+    fun beginningOfStep(remainingMessages: Int): String {
+        return "Execute the current research step. Reasoning/tool use attempts remaining: $remainingMessages"
+    }
 }

@@ -1,5 +1,6 @@
 package cz.bestak.deepresearch.feature.agent.executor
 
+import cz.bestak.deepresearch.feature.agent.domain.AgentInstructions
 import cz.bestak.deepresearch.feature.llm.domain.Message
 import cz.bestak.deepresearch.feature.tool.Tool
 import cz.bestak.deepresearch.feature.llm.service.LLMService
@@ -11,47 +12,58 @@ class ResearchAgentImpl(
     private val registry: ToolRegistry
 ): ResearchAgent {
 
-    override suspend fun run(llm: LLMService, messages: List<Message>, maxSteps: Int): String {
+    private var nmbOfPageLookups = 0
+
+    override suspend fun run(llm: LLMService, messages: List<Message>, maxSteps: Int): ResearchAgent.Result {
         val currentMessages = messages.toMutableList()
-        var nmbOfPageLookups = 0
+        nmbOfPageLookups = 0
 
         (0..maxSteps).forEach { step ->
             println("[Agent] Thinking...")
-            currentMessages += Message.User("Execute the current research step. Reasoning/tool use attempts remaining: ${maxSteps - step}")
+            currentMessages += Message.User(AgentInstructions.beginningOfStep(maxSteps - step))
             val message = llm.complete(currentMessages, tools)
             currentMessages += message
-
             println("[Agent] ${message.content}")
 
             if (message is Message.Assistant) {
-                message.toolCalls?.let { calls ->
-                    calls.forEach { call ->
-                        val tool = tools.find { it.name == call.name } ?: return@forEach
-                        println("[Agent] Accessing tool ${tool.name}")
-
-                        if (tool.name == PageLoaderTool.NAME) {
-                            nmbOfPageLookups++
-                            if (nmbOfPageLookups >= MAX_LOAD_PAGES) {
-                                currentMessages += Message.Tool("Number of load page tool calls exceeded. Cannot load any more pages.", call.toolCallId)
-                                return@forEach
-                            }
-
-                        }
-
-                        val executor = registry.findByName(tool.name)
-                        executor.execute(call.arguments).let { toolRes ->
-                            currentMessages += Message.Tool(toolRes, call.toolCallId)
-                        }
-                    }
-                }
+                currentMessages.addAll(executeToolCalls(message))
             }
-
             if (message.content.contains(END_STEP_TAG)) {
                 println("[Agent] Ending step, found end tag")
-                return message.content.replace(END_STEP_TAG, "")
+                return ResearchAgent.Result(
+                    response = message.content.replace(END_STEP_TAG, ""),
+                    messages = currentMessages
+                )
             }
         }
-        return STEP_INVALID
+        return ResearchAgent.Result(
+            response = STEP_INVALID,
+            messages = currentMessages
+        )
+    }
+
+    private suspend fun executeToolCalls(message: Message.Assistant): List<Message> {
+        val newMessages = mutableListOf<Message>()
+        message.toolCalls?.let { calls ->
+            calls.forEach { call ->
+                val tool = tools.find { it.name == call.name } ?: return@forEach
+                println("[Agent] Accessing tool ${tool.name}")
+
+                if (tool.name == PageLoaderTool.NAME) {
+                    nmbOfPageLookups++
+                    if (nmbOfPageLookups >= MAX_LOAD_PAGES) {
+                        newMessages += Message.Tool("Number of load page tool calls exceeded. Cannot load any more pages.", call.toolCallId)
+                        return@forEach
+                    }
+                }
+
+                val executor = registry.findByName(tool.name)
+                executor.execute(call.arguments).let { toolRes ->
+                    newMessages += Message.Tool(toolRes, call.toolCallId)
+                }
+            }
+        }
+        return newMessages
     }
 
     companion object {

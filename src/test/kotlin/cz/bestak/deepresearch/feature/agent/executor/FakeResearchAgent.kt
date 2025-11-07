@@ -9,14 +9,14 @@ class FakeResearchAgent : ResearchAgent {
 
     val runCalls = mutableListOf<RunCall>()
 
-    override suspend fun run(llm: LLMService, messages: List<Message>, maxSteps: Int): String {
+    override suspend fun run(llm: LLMService, messages: List<Message>, maxSteps: Int): ResearchAgent.Result {
         runCalls += RunCall(llm, messages, maxSteps)
 
         val lastUserMessage = messages.lastOrNull()?.content.orEmpty()
         return if (lastUserMessage.contains(AgentInstructions.summarizeResult.take(10))) {
-            getSummary(runCalls.size - 1)
+            ResearchAgent.Result(getSummary(runCalls.size - 1))
         } else {
-            STEP_RESULT
+            ResearchAgent.Result(STEP_RESULT)
         }
     }
 
