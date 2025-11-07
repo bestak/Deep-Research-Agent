@@ -11,17 +11,25 @@ class InitialPlanService(
 
     suspend fun create(llm: LLMService, userQuery: String): ResearchPlan {
         println("[Plan] Creating...")
-        val result = llm.complete(
-            listOf(
-                Message.System(AgentInstructions.preProcessUserPrompt),
-                Message.User(userQuery)
+        var parsedPlan: ResearchPlan? = null
+        var attempts = 0
+        while (parsedPlan == null) {
+            attempts++
+            val result = llm.complete(
+                listOf(
+                    Message.System(AgentInstructions.preProcessUserPrompt),
+                    Message.User(userQuery)
+                )
             )
-        )
-        val parsedPlan = try {
-            initialPlanParser.parse(result.content)
-        } catch (e: Exception) {
-            System.err.println(result.content)
-            throw e
+            try {
+                parsedPlan = initialPlanParser.parse(result.content)
+            } catch (e: Exception) {
+                println("[Plan] Planning LLM produced invalid JSON. Trying again.")
+
+                if (attempts >= MAX_ATTEMPTS) {
+                    throw Exception("Planning LLM wasn't able to produce valid JSON plan after ${MAX_ATTEMPTS}. Aborting.")
+                }
+            }
         }
 
         println("[Plan] Plan created:")
@@ -29,5 +37,9 @@ class InitialPlanService(
             println("Step #${index + 1}: ${step.title}")
         }
         return parsedPlan
+    }
+
+    companion object {
+        const val MAX_ATTEMPTS = 3
     }
 }
