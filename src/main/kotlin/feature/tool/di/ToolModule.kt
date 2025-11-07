@@ -1,5 +1,7 @@
 package cz.bestak.deepresearch.feature.tool.di
 
+import cz.bestak.deepresearch.feature.tool.BrowserTool
+import cz.bestak.deepresearch.feature.tool.PageLoaderTool
 import cz.bestak.deepresearch.feature.tool.ToolRegistry
 import cz.bestak.deepresearch.feature.tool.connectors.browser.BrowserSearchService
 import cz.bestak.deepresearch.feature.tool.connectors.pageloader.HttpWebPageLoaderService
@@ -27,6 +29,14 @@ val toolModule = module {
         PageLoaderToolExecutor(
             webPageLoaderService = get()
         )
+    }
+
+    factory {
+        BrowserTool()
+    }
+
+    factory {
+        PageLoaderTool()
     }
 
     single {

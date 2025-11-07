@@ -2,32 +2,23 @@ package cz.bestak.deepresearch.feature.agent.executor
 
 import cz.bestak.deepresearch.feature.agent.domain.AgentInstructions
 import cz.bestak.deepresearch.feature.agent.domain.ResearchPlan
+import cz.bestak.deepresearch.feature.agent.domain.ResearchStep
 import cz.bestak.deepresearch.feature.llm.domain.Message
-import cz.bestak.deepresearch.feature.tool.BrowserTool
-import cz.bestak.deepresearch.feature.tool.PageLoaderTool
 import cz.bestak.deepresearch.feature.llm.service.LLMService
-import cz.bestak.deepresearch.feature.tool.ToolRegistry
 
 class ResearchAgentService(
-    private val toolRegistry: ToolRegistry
+    private val researchAgent: ResearchAgent
 ) {
 
     suspend fun executePlan(llm: LLMService, plan: ResearchPlan): String {
-        val tools = listOf(
-            BrowserTool(),
-            PageLoaderTool()
-        )
-
-        val researchAgent = ResearchAgent(llm, tools, toolRegistry)
-
         val allMessages = mutableListOf<Message>(
             Message.System(AgentInstructions.getDeepResearchSystemPrompt(MAX_STEP_COUNT))
         )
         plan.steps.forEachIndexed { index, step ->
             println("[Steps] Starting step ${index + 1}/${plan.steps.size} - ${step.title}")
 
-            allMessages += Message.User("Execute this step (${index + 1} / ${plan.steps.size}): ${step.title}: ${step.description}")
-            val stepResult = researchAgent.run(allMessages, maxSteps = MAX_STEP_COUNT)
+            allMessages += Message.User(getStepIntroMessage(index, plan, step))
+            val stepResult = researchAgent.run(llm, allMessages, maxSteps = MAX_STEP_COUNT)
             allMessages += Message.Assistant(stepResult)
 
             println("[Steps] Finished step ${index + 1}/${plan.steps.size}")
@@ -35,8 +26,12 @@ class ResearchAgentService(
 
         println("[Steps] Finished all steps, summarizing results.")
         allMessages += Message.User(AgentInstructions.summarizeResult)
-        val summarizedResult = researchAgent.run(allMessages)
+        val summarizedResult = researchAgent.run(llm, allMessages, maxSteps = MAX_STEP_COUNT)
         return summarizedResult
+    }
+
+    fun getStepIntroMessage(index: Int, plan: ResearchPlan, step: ResearchStep): String {
+        return "Execute this step (${index + 1} / ${plan.steps.size}): ${step.title}: ${step.description}"
     }
 
 
