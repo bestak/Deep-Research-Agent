@@ -59,8 +59,12 @@ Find must-see sights, museums, and cultural experiences.
 Identify popular local restaurants or street food areas.
 Provide a suggested day-by-day itinerary that balances sightseeing and meals.
 
+See [query 1 results](results/kyoto.md).
+
 ### Query 2 (JetBrains)
 What is the company Jetbrains from the Czech Republic? 
 What are they doing? Describe this business based on the available information.
+
+See [query 2 results](results/jetbrains.md).
 
 
