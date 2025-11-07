@@ -6,9 +6,10 @@ import cz.bestak.deepresearch.feature.llm.service.LLMModelProvider
 import cz.bestak.deepresearch.feature.llm.service.LLMService
 
 class OpenAiModelProvider(
-    private val openAI: OpenAI
+    private val openAI: OpenAI,
+    private val openAiConverter: OpenAiConverter
 ): LLMModelProvider {
     override fun getModel(id: String): LLMService {
-        return OpenAiLLMService(openAI, ModelId(id))
+        return OpenAiLLMService(openAI, ModelId(id), openAiConverter)
     }
 }

@@ -1,16 +1,11 @@
 package cz.bestak.deepresearch.feature.tool.executor.specific
 
-import cz.bestak.deepresearch.feature.llm.domain.Message
-import cz.bestak.deepresearch.feature.llm.service.LLMModelProvider
-import cz.bestak.deepresearch.feature.llm.service.openai.OpenAiModelProvider
 import cz.bestak.deepresearch.feature.tool.PageLoaderTool
 import cz.bestak.deepresearch.feature.tool.connectors.pageloader.WebPageLoaderService
 import cz.bestak.deepresearch.feature.tool.executor.ToolExecutor
-import kotlinx.serialization.json.Json
 
 class PageLoaderToolExecutor(
-    private val webPageLoaderService: WebPageLoaderService,
-    private val modelProvider: LLMModelProvider
+    private val webPageLoaderService: WebPageLoaderService
 ): ToolExecutor {
     override val name: String = PageLoaderTool.NAME
 

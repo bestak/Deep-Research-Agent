@@ -5,6 +5,7 @@ import com.aallam.openai.api.logging.LogLevel
 import com.aallam.openai.client.LoggingConfig
 import com.aallam.openai.client.OpenAI
 import cz.bestak.deepresearch.feature.llm.service.LLMModelProvider
+import cz.bestak.deepresearch.feature.llm.service.openai.OpenAiConverter
 import cz.bestak.deepresearch.feature.llm.service.openai.OpenAiModelProvider
 import cz.bestak.deepresearch.service.http.HttpClient
 import cz.bestak.deepresearch.service.http.KtorHttpClient
@@ -22,8 +23,15 @@ val llmModule = module {
         )
     }
 
+    factory {
+        OpenAiConverter()
+    }
+
     single<LLMModelProvider> {
-        OpenAiModelProvider(openAI = get())
+        OpenAiModelProvider(
+            openAI = get(),
+            openAiConverter = get(),
+        )
     }
 
 }
