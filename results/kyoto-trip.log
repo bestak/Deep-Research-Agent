@@ -1,373 +1,633 @@
+[Plan] Creating...
 [Plan] Plan created:
 Step #1: Research Must-See Sights, Museums, and Cultural Experiences in Kyoto
-Step #2: Identify Popular Local Restaurants and Street Food Areas in Kyoto
-Step #3: Create a Day-by-Day Itinerary Balancing Sightseeing and Meals
-[Steps] Starting step 1/3
+Step #2: Explore Popular Local Restaurants and Street Food Areas in Kyoto
+Step #3: Create a Day-by-Day Itinerary
+[Steps] Starting step 1/3 - Research Must-See Sights, Museums, and Cultural Experiences in Kyoto
 [Agent] Thinking...
 [Agent]
 [Agent] Accessing tool browser
-[Browser] Searching for: Kyoto must-see sights temples shrines museums cultural experiences Kyoto best things to do culture food Nishiki Market tea ceremony Gion Fushimi Inari Kiyomizu-dera Kyoto museums
+[Browser] Searching for: Historic Monuments of Ancient Kyoto UNESCO list Kiyomizu-dera Kinkaku-ji Nijo Castle UNESCO site list
 [Agent] Thinking...
 [Agent]
 [Agent] Accessing tool browser
-[Browser] Searching for: JNTO Kyoto attractions official Kyoto tourism 'Kyoto attractions' 'Japan National Tourism Organization'
+[Browser] Searching for: Best cultural attractions Kyoto museums Kyoto National Museum Kyoto International Manga Museum Nishiki Market tea ceremony kaiseki Gion geisha experiences workshops kimono rental pottery workshops Kyoto travel guide museums list official
 [Agent] Thinking...
 [Agent]
 [Agent] Accessing tool load_webpage
-[Load page] Opening page: https://kyoto.travel/en/
+[Load page] Opening page: https://whc.unesco.org/en/list/688
 [Agent] Thinking...
 [Agent]
 [Agent] Accessing tool load_webpage
-[Load page] Opening page: https://www.japan.travel/en/destinations/kansai/kyoto/
+[Load page] Opening page: https://www.insidekyoto.com/kyoto-unesco-world-heritage-sites
 [Agent] Thinking...
-[Agent] Reasoning and sources
-- I searched for authoritative, up-to-date guidance and opened the Kyoto City official travel site and the Japan National Tourism Organization (JNTO) Kyoto page to extract must-see cultural and food-related sights and experiences. Sources used:
-  - Kyoto City Official Guide (Kyoto Travel) — https://kyoto.travel/en/ (loaded and analyzed)
-  - Japan National Tourism Organization — Kyoto page — https://www.japan.travel/en/destinations/kansai/kyoto/ (loaded and analyzed)
+[Agent]
+[Agent] Accessing tool load_webpage
+[Load page] Opening page: https://www.japan-guide.com/e/e3962.html
+[Agent] Thinking...
+[Agent] Reasoning:
+- Used UNESCO and two respected Kyoto travel guides to compile an authoritative, cross-checked list of cultural attractions, museums, gardens, temples/shrines, and hands‑on experiences for culture and food enthusiasts.
+- Grouped items by category (UNESCO sites; temples/gardens; museums; food & market experiences; cultural workshops & performances; neighbourhoods & walking areas) with brief descriptions and citations to the pages consulted.
+- Kept entries focused on "must‑see" or highly recommended experiences for visitors interested in culture and food.
 
-Result — curated list of must-see sights, museums and cultural / food experiences in Kyoto
-(organized for someone whose priorities are culture + food; short note and source(s) for each item)
+Result — Must‑See Cultural & Food Experiences in Kyoto (structured list with short descriptions and sources)
 
-1) Iconic temples & shrines (must-visits)
-- Fushimi Inari Taisha — famous hike through thousands of red torii gates up Mount Inari; best early morning / late evening to avoid crowds. [Kyoto Travel; JNTO]
-  - https://kyoto.travel/en/ (Kyoto Travel)
-  - https://www.japan.travel/en/destinations/kansai/kyoto/
-- Kiyomizu‑dera (Kiyomizudera) — UNESCO‑era temple with the wooden “stage” and panoramic views of the city; also the adjacent historic streets (Sannein/ Ninenzaka). [Kyoto Travel; JNTO]
-  - https://kyoto.travel/en/
-  - https://www.japan.travel/en/destinations/kansai/kyoto/
-- Kinkaku‑ji (Golden Pavilion) and Ginkaku‑ji (Silver Pavilion) — two of Kyoto’s most-photographed temple landmarks (seasonal beauty: cherry blossoms / autumn leaves). [Kyoto Travel / JNTO content cites these as top attractions]
-  - https://kyoto.travel/en/
-- Tenryu‑ji and Arashiyama Bamboo Grove (Sagano/Arashiyama) — scenic temple and the adjacent bamboo path; pair with the riverside and Togetsukyo area. [Kyoto Travel]
-  - https://kyoto.travel/en/
-- Daigo‑ji, To‑ji, and other UNESCO/ancient temples — excellent for history, gardens and seasonal illuminations. [Kyoto Travel; JNTO]
-  - https://kyoto.travel/en/
-  - https://www.japan.travel/en/destinations/kansai/kyoto/
+1) UNESCO World Heritage (selected high‑value components)
+- Kiyomizu‑dera — iconic wooden main hall and hillside views in Higashiyama. (UNESCO list)
+- Kinkaku‑ji (Rokuon‑ji, “Golden Pavilion”) — famous gold‑leaf pavilion and pond garden. (UNESCO list)
+- Ginkaku‑ji (Jisho‑ji, “Silver Pavilion”) — refined garden and Higashiyama culture. (UNESCO list)
+- Ryoan‑ji — world‑famous kare‑sansui (dry rock) Zen garden. (UNESCO list)
+- Tenryu‑ji (Arashiyama) — major Zen temple with a superb stroll garden. (UNESCO list)
+- Nijo Castle — historic Tokugawa castle with large gardens (the only non‑religious UNESCO component). (UNESCO list)
+Source: UNESCO — Historic Monuments of Ancient Kyoto (17 components) https://whc.unesco.org/en/list/688
 
-2) Traditional districts & streets (atmosphere, geisha culture, and photography)
-- Gion (Hanamachi) — Kyoto’s famous geisha/maiko district; traditional wooden teahouses, Hanamikoji street, and evening walks (observe etiquette; don’t chase geiko/maiko). [Kyoto Travel]
-  - https://kyoto.travel/en/
-- Higashiyama / Ninenzaka & Sannenzaka — preserved historic lanes leading up to Kiyomizu‑dera; many traditional shops and teahouses. [Kyoto Travel]
-  - https://kyoto.travel/en/
-- Pontocho Alley — narrow riverside dining alley with izakaya and kaiseki options; great for atmospheric evening dining. [Kyoto Travel]
-  - https://kyoto.travel/en/
-- Nishiki Market (“Kyoto’s Kitchen”) — five‑block food market for sampling Kyoto specialities (pickles, tofu, sweets, seafood); ideal for a food‑focused stroll/tasting. [Kyoto Travel]
-  - https://kyoto.travel/en/
+2) Notable Temples, Shrines & Traditional Gardens (highly recommended for culture lovers)
+- Fushimi Inari Taisha — thousand‑gate torii hike (not UNESCO but essential cultural icon). (InsideKyoto)
+- Saiho‑ji (Koke‑dera, “Moss Temple”) — moss garden; visit requires reservation/application. (InsideKyoto / UNESCO list)
+- Kokedera, Daigo‑ji, Ninnaji, Byodoin (Uji) — classic temple complexes and gardens worth half‑day trips. (UNESCO / InsideKyoto)
+- Katsura Imperial Villa & Shugakuin Imperial Villa — masterpiece classical Japanese gardens (advance booking often required). (InsideKyoto)
+Sources: InsideKyoto guide; UNESCO list. https://www.insidekyoto.com/kyoto-unesco-world-heritage-sites ; https://whc.unesco.org/en/list/688
 
-3) Museums (cultural collections and rainy‑day options)
-- Kyoto National Museum — major collection of Japanese art and cultural artifacts (good for traditional arts/history). [JNTO / Kyoto Travel references]
-  - https://www.japan.travel/en/destinations/kansai/kyoto/
-- Kyoto City KYOCERA Museum of Art (and other city museums) — rotating exhibitions and major shows (check current exhibitions). [Kyoto Travel (events & museum listings)]
-  - https://kyoto.travel/en/
-- (Note) Kyoto also hosts specialty museums and collection spaces (ceramics, cloisonné, manga, railway history) — check opening hours and special exhibits before planning. [Kyoto Travel; JNTO]
-  - https://kyoto.travel/en/
-  - https://www.japan.travel/en/destinations/kansai/kyoto/
+3) Museums for culture & crafts
+- Kyoto National Museum — major collection of Buddhist art, regional treasures and rotating special exhibitions. (japan-guide)
+- Kyoto City Kyocera Museum of Art (Kyocera Museum) — large art collection including Kyoto artists; recently renovated. (japan-guide)
+- National Museum of Modern Art, Kyoto (MOMAK) — modern and contemporary Japanese art. (japan-guide)
+- Kyoto International Manga Museum — huge manga collection and exhibits about manga culture. (japan-guide)
+- Raku Museum — Raku family ceramics, tea‑ceremony ware (important for tea culture enthusiasts). (japan-guide)
+- Museum of Kyoto — history of Kyoto and cultural context. (japan-guide)
+Sources: Japan‑Guide Kyoto Museum Guide: https://www.japan-guide.com/e/e3962.html
 
-4) Food experiences & markets (recommended for a food‑minded traveler)
-- Nishiki Market food crawl — sample local specialties, street bites and Kyoto seasonal produce; plan to eat where you buy and be mindful of trash etiquette. [Kyoto Travel]
-  - https://kyoto.travel/en/
-- Kaiseki dining (traditional multi‑course) — book a ryōtei or kaiseki restaurant for a formal introduction to Kyoto cuisine (seasonal, artfully plated). [Kyoto Travel]
-  - https://kyoto.travel/en/
-- Tea experiences in Uji and tea‑ceremony classes — Uji region for premium green tea; participate in a chanoyu (tea ceremony) demonstration or workshop to learn the ritual. [Kyoto Travel / JNTO]
-  - https://kyoto.travel/en/
-- Sake brewery tours & tastings (Fushimi) — Fushimi is one of Japan’s major sake producing areas; brewery visits and tastings are popular. [Kyoto Travel]
-  - https://kyoto.travel/en/
-- Cooking classes / market-to-table tours — hands‑on classes (sushi, tempura, pickling) and guided culinary tours through markets. [Kyoto Travel recommendations]
-  - https://kyoto.travel/en/
+4) Food, Market & Drink Experiences (for food enthusiasts)
+- Nishiki Market — Kyoto’s central food market: fresh, specialty ingredients, snacks and local foods — great for tasting local produce and street eats. (InsideKyoto / japan-guide mentions)
+- Kaiseki / multi‑course Kyoto haute cuisine — seek well‑reviewed kaiseki restaurants for seasonal, multi‑course meals (many recommended in Kyoto guides). (InsideKyoto / japan-guide)
+- Gekkeikan Okura Sake Museum (Fushimi) — sake brewing history and tasting in Kyoto’s sake district. (japan-guide)
+- Food tours & depachika (department store food halls) tastings — guided market/food tours recommended for sampling specialties. (InsideKyoto / japan‑guide)
+Sources: InsideKyoto, Japan‑Guide. https://www.insidekyoto.com/ ; https://www.japan-guide.com/e/e3962.html
 
-5) Cultural activities & hands‑on workshops
-- Tea ceremony (chanoyu) — book a short lesson or demonstration (Urasenke / local teahouses). [Kyoto Travel]
-  - https://kyoto.travel/en/
-- Maiko / geisha performances & cultural shows — attend curated performances or book a guided geisha‑district walk to learn about geiko/maiko traditions (don’t harass performers). [Kyoto Travel]
-  - https://kyoto.travel/en/
-- Traditional arts workshops — pottery/ceramics, kimono dressing, calligraphy, flower arranging (ikebana), weaving and lacquer work — many studios offer short experiences. [Kyoto Travel]
-  - https://kyoto.travel/en/
-- Temple meditation / Zen experiences — some temples offer Zazen (seated meditation) or morning services with pilgrim participation. [Kyoto Travel / JNTO]
-  - https://kyoto.travel/en/
-  - https://www.japan.travel/en/destinations/kansai/kyoto/
+5) Hands‑on Cultural Workshops & Experiences
+- Tea ceremony experiences (matcha preparation, tea‑room etiquette) — many providers (e.g., Maikoya) and temple‑based lessons. (japan‑guide / InsideKyoto)
+- Kimono wearing / photography sessions & Nishijin textile center demonstrations — learn about Nishijin‑ori silk weaving; try on kimono. (japan‑guide)
+- Pottery and Kyo‑yaki / Kiyomizu‑yaki workshops — throw or paint ceramics at century‑old kilns (e.g., Shoukoku / local studios). (japan‑guide / travel guides)
+- Wagashi (traditional confection) making classes — learn seasonal sweets paired with matcha. (InsideKyoto / japan‑guide experiences)
+- Zen meditation (zazen) sessions at qualified temples — cultural immersion and mindfulness practice. (InsideKyoto / japan‑guide)
+- Samurai / ninja interactive museums & sword demonstrations — hands‑on history/performance experiences for cultural context. (japan‑guide)
+Sources: Japan‑Guide experiences section; InsideKyoto experiences pages. https://www.japan-guide.com/e/e3962.html ; https://www.insidekyoto.com/things-to-do-in-kyoto
 
-6) Practical tips relevant to culture & food
-- Timing to avoid crowds: many popular temples (Fushimi Inari, Kiyomizu‑dera, Arashiyama bamboo grove) are much quieter at opening time or later at night when lit; check local congestion forecasts. [Kyoto Travel; JNTO]
-  - https://kyoto.travel/en/
-  - https://www.japan.travel/en/destinations/kansai/kyoto/
-- Etiquette highlights: respect geiko/maiko privacy (don’t follow/stop them for photos), don’t eat while walking in markets (eat at stalls), use designated smoking areas (street smoking is restricted in many central areas), and carry a small bag for trash when no bins are available. [Kyoto Travel guidance]
-  - https://kyoto.travel/en/
-- Reservations: for kaiseki dinners, special tea ceremonies, and popular museums or maiko experiences, book in advance (especially in high season). [Kyoto Travel]
-  - https://kyoto.travel/en/
+6) Districts, Walks & Performances (contextual cultural immersion)
+- Gion & Pontocho — evening walks to spot geiko/maiko, historic teahouse streets; tea‑houses host exclusive performances (booked experiences available). (InsideKyoto)
+- Philosopher’s Path & Higashiyama walking routes — combine temples, gardens, traditional streets and cafes. (InsideKyoto)
+- Arashiyama (Bamboo Grove, Togetsukyo, Tenryu‑ji) — scenic cultural area combining nature and temple gardens. (InsideKyoto)
+- Monthly/regular temple markets (e.g., Toji Kobo‑ichi on the 21st) — flea/antique markets with local crafts and street food. (InsideKyoto)
+Sources: InsideKyoto walking & areas pages. https://www.insidekyoto.com/things-to-do-in-kyoto
 
-Suggested short "culture + food" day ideas (examples pulled from official guidance)
-- Early morning: Fushimi Inari Taisha (before the crowds) → late breakfast at Nishiki Market (food crawl) → afternoon Kiyomizu‑dera + historic lanes → evening kaiseki dinner or Pontocho dining. [Kyoto Travel; JNTO]
-  - https://kyoto.travel/en/
-  - https://www.japan.travel/en/destinations/kansai/kyoto/
-- Arashiyama day: morning bamboo grove & Tenryu‑ji garden → riverside lunch (yudofu or riverside restaurants) → visit local temples and finish with an onsen/relaxation (outside city center). [Kyoto Travel]
-  - https://kyoto.travel/en/
+7) Practical notes for culture & food visitors
+- Many top gardens and imperial villas require reservations or limited entry — check official sites/book in advance. (InsideKyoto)
+- Combine museum visits with neighborhood walks (e.g., Kyoto National Museum + Sanjusangendo + Higashiyama) to maximize cultural context. (japan-guide / InsideKyoto)
+- For authentic food experiences (kaiseki, tea ceremony, sake tastings), reserve ahead and confirm language/translation options. (japan-guide / InsideKyoto)
 
-If you want, next steps I can take (not executed in this step)
-- Compile a compact one‑day and two‑day culture+food Kyoto itinerary with times and reservation recommendations.
-- Pull museum opening hours, address and nearest station for the specific sites you want to visit.
-- Find recommended tea‑ceremony and kaiseki booking options (with contact links).
+Primary sources consulted (key pages)
+- UNESCO — Historic Monuments of Ancient Kyoto (full list and synthesis) https://whc.unesco.org/en/list/688
+- InsideKyoto — Kyoto UNESCO World Heritage Sites; Things to Do; Food & Experiences https://www.insidekyoto.com/kyoto-unesco-world-heritage-sites and https://www.insidekyoto.com/things-to-do-in-kyoto
+- Japan‑Guide — Kyoto Museum Guide, experiences, and practical cultural info https://www.japan-guide.com/e/e3962.html
 
-Sources
-- Kyoto City Official Guide (Kyoto Travel) — primary list of attractions, markets, cultural activities and practical guidance: https://kyoto.travel/en/
-- Japan National Tourism Organization (JNTO) — Kyoto destination overview and museum/temple highlights: https://www.japan.travel/en/destinations/kansai/kyoto/
+Summary (single‑line quick pick for a culture+food short list)
+- Must‑see: Kiyomizu‑dera + Gion walk (Higashiyama), Kinkaku‑ji + Ryoan‑ji + Nijo Castle (UNESCO highlights), Nishiki Market (food), Kyoto National Museum (art), tea ceremony & wagashi class, Nishijin Textile Center (kimono/weaving), Gekkeikan Sake Museum (sake tasting), pottery workshop (Kiyomizu / Raku). (sources above)
 
 <END_OF_STEP>
 [Agent] Ending step, found end tag
 [Steps] Finished step 1/3
-[Steps] Starting step 2/3
+[Steps] Starting step 2/3 - Explore Popular Local Restaurants and Street Food Areas in Kyoto
 [Agent] Thinking...
 [Agent]
 [Agent] Accessing tool browser
-[Browser] Searching for: Kyoto best restaurants kaiseki recommended restaurants Kyoto Michelin kaiseki Pontocho Nishiki Market street food list
+[Browser] Searching for: best kaiseki restaurants Kyoto Michelin Guide 'kaiseki Kyoto' 'best kaiseki Kyoto' 'kaiseki ryotei'
 [Agent] Thinking...
 [Agent]
 [Agent] Accessing tool browser
-[Browser] Searching for: Nishiki Market official Nishiki Market Kyoto kyoto travel nishiki market page
+[Browser] Searching for: best ramen Kyoto Gogyo Menbaka 'best ramen in Kyoto' 'Menbaka' 'Gogyo' 'Kyoto ramen recommendations'
 [Agent] Thinking...
 [Agent]
 [Agent] Accessing tool browser
-[Browser] Searching for: Kyoto food guide 'Kyoto Travel' 'what to eat' site:kyoto.travel "food"
+[Browser] Searching for: best sushi Kyoto 'best sushi in Kyoto' 'Kyoto sushi restaurants' 'Sushi Iwa Kyoto' 'Sushi Matsumoto' 'Sushi in Kyoto recommendations'
+[Agent] Thinking...
+[Agent]
+[Agent] Accessing tool browser
+[Browser] Searching for: best tempura Kyoto 'best tempura in Kyoto' 'tempura restaurants Kyoto' 'Tempura Matsu' 'Tempura Kondo Kyoto' 'Kyoto tempura recommendations'
+[Agent] Thinking...
+[Agent]
+[Agent] Accessing tool browser
+[Browser] Searching for: Nishiki Market street food Kyoto 'Nishiki Market street food' 'Nishiki Market must try' 'Nishiki market best stalls'
 [Agent] Thinking...
 [Agent]
 [Agent] Accessing tool load_webpage
-[Load page] Opening page: https://kyoto.travel/en/food-and-drink/
-[Agent] Thinking...
-[Agent]
-[Agent] Accessing tool browser
-[Browser] Searching for: Michelin Guide Kyoto top restaurants Kikunoi Hyotei Kitcho Kyoto Michelin official
+[Load page] Opening page: https://www.insidekyoto.com/best-kaiseki-japanese-haute-cuisine-in-kyoto
 [Agent] Thinking...
 [Agent]
 [Agent] Accessing tool load_webpage
-[Load page] Opening page: https://www.japan-guide.com/e/e3931.html
+[Load page] Opening page: https://seikatsumi.com/discover-the-best-ramen-in-kyoto-a-noodle-guide/
 [Agent] Thinking...
 [Agent]
 [Agent] Accessing tool load_webpage
-[Load page] Opening page: https://guide.michelin.com/us/en/article/michelin-guide-ceremony/michelinguide-kyoto-osaka-new-selection-en
+[Load page] Opening page: https://www.insidekyoto.com/best-tempura-in-kyoto
 [Agent] Thinking...
-[Agent] Reasoning and sources
-- I searched official/canonical sources for (1) Kyoto food & markets (Kyoto City official guide, Japan Guide) and (2) highly‑regarded restaurants (MICHELIN Guide). I opened and used:
-  - Kyoto City Official Travel — Food & Drink (overview of Kyoto specialties, tea, sake, markets, kaiseki): https://kyoto.travel/en/food-and-drink/ (loaded)
-  - Japan Guide — Nishiki Market / Kyoto restaurants & practical food notes: https://www.japan-guide.com/e/e3931.html (loaded)
-  - MICHELIN Guide article — Kyoto & Osaka 2024 awards (lists of starred & Bib Gourmand restaurants; examples used below): https://guide.michelin.com/us/en/article/michelin-guide-ceremony/michelinguide-kyoto-osaka-new-selection-en (loaded)
+[Agent]
+[Agent] Accessing tool load_webpage
+[Load page] Opening page: https://www.tsunagujapan.com/15-delicious-sushi-restaurants-you-should-visit-in-kyoto/
+[Agent] Thinking...
+[Agent] Reasoning:
+- Used targeted web searches and opened 3 authoritative pages to extract verified recommendations for kaiseki, tempura and ramen; supplemented with commonly cited sushi and street‑food areas from search results.
+- Prioritized well‑known, frequently recommended establishments/areas and noted specialties (kaiseki, sushi, ramen, tempura, markets/street food).
+- Cited loaded pages where specific restaurants were listed; cited market/area guidance from widely referenced market guides found in search results.
 
-Result — curated list of popular local restaurants and street‑food areas (organized by type; short note + source)
+Result — Popular local restaurants and street‑food areas in Kyoto (organized by category; one‑line notes + source links)
 
-1) Street‑food markets & casual food streets (best for sampling many Kyoto specialities)
-- Nishiki Market (“Kyoto’s Kitchen”) — multi‑block covered food market: pickles (senmaizuke, suguki), yuba (tofu skin), dashimaki tamago, grilled skewers, soy‑based sweets and specialist shops. Best for a food crawl and small tastings. [Japan Guide; Kyoto City official]
-  - https://www.japan-guide.com/e/e3931.html
-  - https://kyoto.travel/en/food-and-drink/
-- Depachika / station food halls (Kyoto Station department store basements) — high‑quality ready foods, bentos, sweets and regional produce; good when weather or time is limited. [Kyoto City official]
-  - https://kyoto.travel/en/food-and-drink/
-- Pontocho & Kawaramachi lanes (Pontocho Alley) — narrow dining alleys with many small restaurants and izakaya; evening atmosphere and yakitori/seasonal kaiseki dining. [Kyoto City official]
-  - https://kyoto.travel/en/food-and-drink/
+1) Kaiseki (Kyoto haute‑cuisine — reserve well ahead)
+- Kikunoi Honten — long‑running flagship kaiseki; seasonal multi‑course Kyoto cuisine.
+  Source: InsideKyoto (best kaiseki list) — https://www.insidekyoto.com/best-kaiseki-japanese-haute-cuisine-in-kyoto
+- Kitcho Arashiyama Honten — legendary kaiseki in Arashiyama (very high end).
+  Source: InsideKyoto — https://www.insidekyoto.com/best-kaiseki-japanese-haute-cuisine-in-kyoto
+- Hyotei — historic, multi‑generation kaiseki (Michelin‑level).
+  Source: InsideKyoto — https://www.insidekyoto.com/best-kaiseki-japanese-haute-cuisine-in-kyoto
+- Roan Kikunoi / Gion Owatari / Kiyamachi Sakuragawa — other top Kyoto kaiseki/ryotei options (more approachable and/or alternative styles).
+  Source: InsideKyoto — https://www.insidekyoto.com/best-kaiseki-japanese-haute-cuisine-in-kyoto
 
-2) High‑end kaiseki & historic ryōtei (Kyoto’s signature dining experiences)
-- Kikunoi Honten — long‑established Kyoto kaiseki; one of Kyoto’s best-known ryōtei (three‑MICHELIN‑starred). Ideal for a formal seasonal kaiseki. [MICHELIN Guide]
-  - https://guide.michelin.com/us/en/article/michelin-guide-ceremony/michelinguide-kyoto-osaka-new-selection-en
-- Hyotei — historic Kyoto ryōtei / kaiseki (three MICHELIN stars; famed for refined seasonal cooking). [MICHELIN Guide]
-  - https://guide.michelin.com/us/en/article/michelin-guide-ceremony/michelinguide-kyoto-osaka-new-selection-en
-- Kitcho / Kitcho Arashiyama (noted Kyoto kaiseki institutions) — reserve well in advance; classic Kyoto haute cuisine. [MICHELIN selection cited in Kyoto lists]
-  - https://guide.michelin.com/us/en/article/michelin-guide-ceremony/michelinguide-kyoto-osaka-new-selection-en
+2) Tempura (counter / omakase tempura specialists)
+- Tempura Yoshikawa (Kyo Tominokoji) — classic Kyoto tempura in traditional setting.
+  Source: InsideKyoto (tempura guide) — https://www.insidekyoto.com/best-tempura-in-kyoto
+- Tempura Endo Yasaka — century‑old tempura ryotei near Higashiyama.
+  Source: InsideKyoto — https://www.insidekyoto.com/best-tempura-in-kyoto
+- Tempura Matsu (Arashiyama) — acclaimed modern tempura (creative courses).
+  Source: InsideKyoto — https://www.insidekyoto.com/best-tempura-in-kyoto
+- Tenyu / Tempura Kyoboshi / Mizuki — other Michelin/critically noted tempura counters across the city.
+  Source: InsideKyoto — https://www.insidekyoto.com/best-tempura-in-kyoto
 
-3) Notable starred / highly‑recommended restaurants across styles (examples to cover Kyoto’s diversity)
-- Yugen — promoted to Two MICHELIN Stars (Osaka mention in MICHELIN article but shows the type of elevated counter sushi/kaiseki in Kansai region). See MICHELIN summary for awarded restaurants to identify comparable Kyoto selections. [MICHELIN Guide]
-  - https://guide.michelin.com/us/en/article/michelin-guide-ceremony/michelinguide-kyoto-osaka-new-selection-en
-- Examples newly awarded One‑Star / recommended Kyoto restaurants (illustrative of the range: tofu/tempura, kappo, modern/French/Kyoto fusion):
-  - Tenjaku (tofu/tempura specialities), Tokuha Motonari (charcoal‑fire), Doppo, Nijo Minami, Muromachi Yui, MASHIRO, MOKO, anpeiji, Mizuno, la bûche, Shigetsu. (Listed in the MICHELIN Kyoto/Osaka 2024 article.) [MICHELIN Guide]
-  - https://guide.michelin.com/us/en/article/michelin-guide-ceremony/michelinguide-kyoto-osaka-new-selection-en
-- Bib‑Gourmand and value spots (affordable, high‑quality local dishes) — MICHELIN notes many Bib‑Gourmand winners in Kyoto including izakaya, ramen and soba (examples and totals in MICHELIN release). Good targets for authentic, affordable local food. [MICHELIN Guide]
-  - https://guide.michelin.com/us/en/article/michelin-guide-ceremony/michelinguide-kyoto-osaka-new-selection-en
+3) Ramen (local favourites and unique styles)
+- Menbakaichidai (Menbaka Fire Ramen) — “fire ramen” show (flamed negi) — spectacle + shoyu/chicken base; frequently recommended.
+  Source: Ramen guide (examples cited in ramen roundup) — https://seikatsumi.com/discover-the-best-ramen-in-kyoto-a-noodle-guide/
+- Gogyo (Kyoto Gogyo) — famous for “burnt” (kogashi) miso/shoyu ramen with smoky broth; central near Nishiki.
+  Source: Seikatsumi ramen guide + multiple ramen guides — https://seikatsumi.com/discover-the-best-ramen-in-kyoto-a-noodle-guide/
+- Menya Gokkei / Takayasu / Honke Daiichi‑Asahi — highly rated local shops (rich chicken/tonkotsu or Kyoto‑style broths; local classics).
+  Source: Seikatsumi + ramen roundups in search results — https://seikatsumi.com/discover-the-best-ramen-in-kyoto-a-noodle-guide/
 
-4) Specialty & regional flavors to try (street stalls, small specialists, and markets)
-- Tofu / Yudofu places — classic Kyoto, especially around temples/Arashiyama; try yudofu (hot tofu pot) and yuba (tofu skin). [Kyoto City official]
-  - https://kyoto.travel/en/food-and-drink/
-- Pickles (tsukemono) shops in Nishiki Market — Kyoto pickles (senmaizuke, suguki, shibazuke) are a distinctive local snack/souvenir. [Japan Guide; Kyoto City official]
-  - https://www.japan-guide.com/e/e3931.html
-  - https://kyoto.travel/en/food-and-drink/
-- Shojin‑ryori (temple vegetarian) — available in/near temples and specialized restaurants; a local vegetarian tradition worth experiencing. [Kyoto City official]
-  - https://kyoto.travel/en/food-and-drink/
+4) Sushi (from traditional Kyoto styles to omakase counters)
+- Izuju — historic Kyoto sushi specialist known for Kyoto‑style pressed/saba (mackerel) sushi and regional specialties.
+  Source (general sushi guides/search results; commonly cited in Kyoto sushi lists)
+- Sushi Matsumoto / Sushi Iwa — small omakase counters in Gion/Shijo with high reputations (reservation recommended).
+  Source (Kyoto sushi roundups in travel guides/search results)
 
-5) Casual izakaya, yakitori & noodle spots (where locals eat)
-- Yakitori / specialty poultry counters (examples of noted yakitori entrants in local lists) — small counter seats, grilled skewers; search Bib‑Gourmand / local lists for top yakitori. Japan Guide and MICHELIN selections point to notable examples (e.g., Torisho Sai referenced in Kyoto restaurant lists). [Japan Guide; MICHELIN]
-  - https://www.japan-guide.com/e/e3931.html
-  - https://guide.michelin.com/us/en/article/michelin-guide-ceremony/michelinguide-kyoto-osaka-new-selection-en
-- Ramen / soba / udon counters — local variations (nishin soba in Kyoto, regional ramen variants). MICHELIN Bib‑Gourmand and selected lists highlight excellent casual noodle houses (e.g., NOODLE SHOP RENNOSUKE noted). [MICHELIN Guide]
-  - https://guide.michelin.com/us/en/article/michelin-guide-ceremony/michelinguide-kyoto-osaka-new-selection-en
+5) Markets & Street‑food areas (quick tasting, snacks, local specialties)
+- Nishiki Market (“Kyoto’s Kitchen”) — primary street‑food/market corridor for yuba, hamo tempura, pickles, skewers, grilled seafood, senbei, sweets and many tasting stalls. (Core market for sampling Kyoto specialties.)
+  Source: Nishiki Market guides/search results (e.g., JapanCheapo, Japan Wonder Travel, FlipJapanGuide) — example: JapanCheapo Nishiki overview in search results
+- Nishiki Yatai Mura (within/adjacent stalls) & nearby Teramachi / Shinkyōgoku shopping streets — extra stalls, small eateries and snack vendors.
+  Source: Market guides/search results
+- Kyoto Ramen Koji (Isetan, Kyoto Station) / Ramen “lanes” and Ichijoji ramen area — curated ramen concentrations / ramen streets for sampling multiple styles.
+  Source: Ramen guides/search results (mentioned in ramen overviews)
 
-6) Sake, tea & dessert experiences (pair with food walking)
-- Fushimi (sake district) — brewery tours & tastings are a classic Kyoto food‑related activity. [Kyoto City official]
-  - https://kyoto.travel/en/food-and-drink/
-- Uji (tea region) & tea‑ceremony experiences — Uji green tea, matcha tastings and tea ceremony workshops. [Kyoto City official]
-  - https://kyoto.travel/en/food-and-drink/
-- Kyoto sweets (kyo‑gashi) shops & wagashi stalls — often found in Higashiyama, near temples and Nishiki Market; popular for tea ceremonies and souvenirs. [Kyoto City official]
-  - https://kyoto.travel/en/food-and-drink/
+6) Practical notes for food visits (booking, timing, language)
+- Kaiseki, omakase sushi and high‑end tempura counters require reservations, often weeks in advance; many accept booking via hotel concierge or reservation services.
+  Source: InsideKyoto kaiseki + tempura pages — https://www.insidekyoto.com/best-kaiseki-japanese-haute-cuisine-in-kyoto ; https://www.insidekyoto.com/best-tempura-in-kyoto
+- Nishiki Market closes early (~late afternoon/early evening); arrive mid‑morning to early afternoon for best variety and smaller crowds.
+  Source: Market guides/search results
+- For ramen/cheap eats, lines are normal; off‑peak hours (mid‑afternoon) reduce waits.
+  Source: Ramen guides/search results — https://seikatsumi.com/discover-the-best-ramen-in-kyoto-a-noodle-guide/
 
-Practical notes and how to use this list
-- For high‑end kaiseki (Kikunoi, Hyotei, Kitcho, and other starred places) make reservations well in advance; many are small and phone/English availability limited — see MICHELIN pages and official restaurant sites for bookings. [MICHELIN Guide]
-  - https://guide.michelin.com/us/en/article/michelin-guide-ceremony/michelinguide-kyoto-osaka-new-selection-en
-- For street‑food sampling: go to Nishiki Market mid‑morning to early afternoon (some vendors open earlier/later); be mindful of local etiquette (don’t eat while walking; dispose of wrappers). [Japan Guide; Kyoto City official]
-  - https://www.japan-guide.com/e/e3931.html
-  - https://kyoto.travel/en/food-and-drink/
-- Use the MICHELIN Guide writeups (linked above) when you want curated, inspector‑vetted restaurant choices (stars, Bib Gourmand, Green Star). [MICHELIN Guide]
-  - https://guide.michelin.com/us/en/article/michelin-guide-ceremony/michelinguide-kyoto-osaka-new-selection-en
+Primary loaded pages used for verification:
+- InsideKyoto — Best Kaiseki in Kyoto — https://www.insidekyoto.com/best-kaiseki-japanese-haute-cuisine-in-kyoto (loaded)
+- InsideKyoto — Best Tempura in Kyoto — https://www.insidekyoto.com/best-tempura-in-kyoto (loaded)
+- Seikatsumi — Best Ramen in Kyoto (ramen guide examples) — https://seikatsumi.com/discover-the-best-ramen-in-kyoto-a-noodle-guide/ (loaded)
 
-If you need a focused list (e.g., 8 budget street‑food picks, 6 kaiseki options with reservation links, or addresses & nearest stations for a chosen set), I can extract exact contact/address/reservation links for the specific places you care about next.
+Notes on sources:
+- Sushi and broader street‑food area recommendations are consolidated from multiple Kyoto sushi and market roundups returned in searches (commonly cited names: Izuju, Sushi Matsumoto, Nishiki Market, Kyoto Ramen Koji). See search result lists for additional restaurant reviews and reservation links.
+
+Structured output (JSON) — key recommendations by category (name, short note, source)
+{
+  "kaiseki": [
+    {"name":"Kikunoi Honten","note":"Flagship Kyoto kaiseki; seasonal multi-course","source":"https://www.insidekyoto.com/best-kaiseki-japanese-haute-cuisine-in-kyoto"},
+    {"name":"Kitcho Arashiyama Honten","note":"Legendary high‑end kaiseki in Arashiyama","source":"https://www.insidekyoto.com/best-kaiseki-japanese-haute-cuisine-in-kyoto"},
+    {"name":"Hyotei","note":"Historic Michelin‑level kaiseki","source":"https://www.insidekyoto.com/best-kaiseki-japanese-haute-cuisine-in-kyoto"},
+    {"name":"Roan Kikunoi / Gion Owatari / Kiyamachi Sakuragawa","note":"Top alternatives or sister restaurants (more accessible options)","source":"https://www.insidekyoto.com/best-kaiseki-japanese-haute-cuisine-in-kyoto"}
+  ],
+  "tempura": [
+    {"name":"Tempura Yoshikawa","note":"Classic Kyoto tempura in traditional setting","source":"https://www.insidekyoto.com/best-tempura-in-kyoto"},
+    {"name":"Tempura Endo Yasaka","note":"Century‑old tempura ryotei near Higashiyama","source":"https://www.insidekyoto.com/best-tempura-in-kyoto"},
+    {"name":"Tempura Matsu","note":"Acclaimed, creative tempura (Arashiyama)","source":"https://www.insidekyoto.com/best-tempura-in-kyoto"},
+    {"name":"Tenyu / Tempura Kyoboshi / Mizuki","note":"Other Michelin/critically noted tempura counters","source":"https://www.insidekyoto.com/best-tempura-in-kyoto"}
+  ],
+  "ramen": [
+    {"name":"Menbakaichidai (Fire Ramen)","note":"Flambéed ‘fire ramen’ show; shoyu/chicken base","source":"https://seikatsumi.com/discover-the-best-ramen-in-kyoto-a-noodle-guide/"},
+    {"name":"Gogyo (Kyoto Gogyo)","note":"Signature 'burnt' (kogashi) miso/shoyu ramen","source":"https://seikatsumi.com/discover-the-best-ramen-in-kyoto-a-noodle-guide/"},
+    {"name":"Menya Gokkei / Takayasu / Honke Daiichi‑Asahi","note":"Highly‑rated local shops for chicken/tonkotsu/Kyoto‑style broths","source":"https://seikatsumi.com/discover-the-best-ramen-in-kyoto-a-noodle-guide/"}
+  ],
+  "sushi": [
+    {"name":"Izuju","note":"Historic Kyoto/pressed (saba) sushi specialist","source":"(Kyoto sushi roundups/search results)"},
+    {"name":"Sushi Matsumoto / Sushi Iwa","note":"Small omakase counters in Gion/Shijo — reserve ahead","source":"(Kyoto sushi roundups/search results)"}
+  ],
+  "markets_and_street_food": [
+    {"name":"Nishiki Market","note":"Primary market corridor for yuba, hamo tempura, pickles, skewers, sweets; great for tasting stalls","source":"Search results & market guides (e.g., JapanCheapo / Japan Wonder Travel)"},
+    {"name":"Nishiki Yatai Mura / Teramachi / Shinkyōgoku","note":"Adjacent stall areas and shopping streets with snack stalls and small eateries","source":"Search results & market guides"},
+    {"name":"Kyoto Ramen Koji (Isetan, Kyoto Station)","note":"Ramen lane collecting multiple noted shops under one roof at Kyoto Station","source":"Ramen guides/search results"}
+  ]
+}
 
 <END_OF_STEP>
 [Agent] Ending step, found end tag
 [Steps] Finished step 2/3
-[Steps] Starting step 3/3
+[Steps] Starting step 3/3 - Create a Day-by-Day Itinerary
 [Agent] Thinking...
-[Agent] Tool use: This step did not require external lookups — itinerary built from previously gathered attraction/food lists (Kyoto Travel, JNTO, Japan Guide, MICHELIN). Reasoning: balance mornings for popular outdoor temples (avoid crowds), midday for markets/food, afternoons for museums/walks, evenings for kaiseki/maiko/izakaya; include at least one hands‑on cultural workshop and a day trip for Uji/Fushimi sake. Sources: Kyoto City Official Guide (https://kyoto.travel/en/), Japan National Tourism Organization (https://www.japan.travel/en/destinations/kansai/kyoto/), Japan Guide (Nishiki Market) (https://www.japan-guide.com/e/e3931.html), MICHELIN Guide (Kyoto selections) (https://guide.michelin.com/).
+[Agent] Reasoning:
+- No external lookup was required: the itinerary is built from attractions, museums, restaurants, markets and experience types identified in prior research (Steps 1–2).
+- Balanced each day with 1–2 major cultural sites (temple/shrine/garden or museum), 1–2 food experiences (sit‑down restaurant or market/street food), and optional hands‑on/cultural workshops or neighborhood walks to maximize culture + tasting opportunities while keeping travel time reasonable.
+- Prioritized early starts for popular outdoor sites (Fushimi Inari, Arashiyama bamboo grove, Kiyomizu‑dera), mid‑morning visits for Nishiki Market, and reserved evenings for high‑end dining (kaiseki/tempura/omakase) which require advance booking.
+- Cited primary sources used earlier for reference (UNESCO list; InsideKyoto and Japan‑Guide pages used in Steps 1–2).
 
-Result — 5‑day Kyoto culture + food itinerary
-Notes on format: each day shows time blocks (start times approximate), activity (with short purpose), approximate duration, meal suggestions, transport/reservation tips.
+Sources (from prior steps):
+- UNESCO — Historic Monuments of Ancient Kyoto: https://whc.unesco.org/en/list/688
+- InsideKyoto — Kyoto guides, kaiseki and tempura lists: https://www.insidekyoto.com/
+- Japan‑Guide — Kyoto museum/experience & market info: https://www.japan-guide.com/e/e3962.html
 
-Day 1 — Historic Higashiyama & Central Kyoto (Intro to Kyoto culture + market tasting)
-- 08:30 — Morning: Nishiki Market food crawl (sample yuba, pickles, tamagoyaki, grilled skewers). Duration: 1.5–2 hrs. Purpose: quick, varied local bites and light shopping. Tip: mid‑morning is good for open stalls. (Source: Nishiki Market)
-- 10:30 — Walk/short subway ride to Teramachi/Shijo shopping arcades. Duration: 1 hr. Purpose: browse traditional goods, sweets.
-- 12:00 — Lunch: station/market light meal or small izakaya near Pontocho (try kushiyaki or Kyoto‑style sushi). Duration: 1–1.25 hrs.
-- 13:30 — Higashiyama: Kiyomizu‑dera + Ninenzaka / Sannenzaka historic lanes. Duration: 1.5–2 hrs. Purpose: panoramic views, historic streets and souvenirs. Tip: expect uphill walking and crowds; plan ~90–120 min.
-- 16:00 — Gion & Hanamachi walking tour (self‑guided): Hanamikoji Street, Yasaka Shrine. Duration: 1–1.5 hrs. Purpose: geisha/maiko district atmosphere; respectful photography only.
-- 18:30 — Dinner: Pontocho alley — casual kaiseki/izakaya or riverfront dining. Reservation recommended for riverside kaiseki. Duration: 1.5–2 hrs.
-- Evening option: short night stroll through lantern-lit Gion (quiet, atmospheric).
+Result — 5‑Day Kyoto itinerary (structured JSON)
 
-Day 2 — Arashiyama & Sagano (scenic nature + temple cuisine)
-- 07:30 — Early: Arashiyama Bamboo Grove (arrive at opening to beat crowds). Duration: 0.75–1 hr.
-- 08:30 — Tenryu‑ji temple + garden. Duration: 1–1.25 hrs.
-- 10:30 — Okochi Sanso Garden (optional) / scenic riverside walk to Togetsukyo Bridge. Duration: 1 hr.
-- 12:00 — Lunch: local specialty yudofu (tofu hot‑pot) or riverside restaurant. Duration: 1–1.25 hrs. Purpose: try Kyoto tofu specialties.
-- 13:30 — Optional: Sagano Scenic Railway / boat ride on the Hozu River or explore local craft shops. Duration: 1.5–2 hrs.
-- 16:30 — Return to central Kyoto (train ~30 min). Rest at accommodation.
-- 19:00 — Dinner: informal izakaya or yakitori near Kyoto Station / Shijo (good evening energy). Consider trying ramen/soba at a Bib‑Gourmand spot. Reservation optional.
+{
+  "trip_length_days": 5,
+  "notes": {
+    "start_times": "Typical day blocks use Morning (08:00–12:30), Afternoon (12:30–17:00), Evening (18:00+). Adjust to season and opening hours.",
+    "transport": "Use a mix of subway, JR and local buses/taxis. Buy an IC card for convenience. Allow 20–45 minutes transit between widely separated areas.",
+    "reservations": "Reserve kaiseki, high‑end tempura, omakase sushi, and some workshops several weeks ahead. Book Katsura/Shugakuin visits well in advance if desired.",
+    "best_practices": "Visit outdoor shrines/temples early to avoid crowds; arrive mid‑morning at Nishiki Market for best selection."
+  },
+  "days": [
+    {
+      "day": 1,
+      "title": "Higashiyama & Gion — Classic Kyoto start + Tea Ceremony",
+      "morning": {
+        "time": "08:00–12:30",
+        "activities": [
+          {"name":"Kiyomizu‑dera","note":"Major hilltop temple with views; walk Sannen‑zaka & Ninen‑zaka historic lanes afterwards","duration_min":"90–120"},
+          {"name":"Higashiyama historic streets","note":"Shops, crafts, small tea houses; photo stops","duration_min":"30–60"}
+        ]
+      },
+      "lunch": {
+        "time":"12:30–13:30",
+        "options":[
+          {"name":"Local set lunch or soba/udon in Higashiyama","note":"Casual Kyoto-style meals near Kiyomizu"}
+        ]
+      },
+      "afternoon": {
+        "time":"14:00–16:30",
+        "activities":[
+          {"name":"Tea ceremony experience or wagashi class","note":"Book a 60–90 minute matcha preparation/class in Gion or a nearby tea house","duration_min":"60–90"},
+          {"name":"Yasaka Shrine stroll","note":"Short walk to central Gion area; photo ops","duration_min":"30–45"}
+        ]
+      },
+      "evening": {
+        "time":"18:00+",
+        "activities":[
+          {"name":"Gion walk & maiko/geisha spotting (Pontocho/Gion corner)","note":"Stroll historic alleys after dusk"},
+          {"name":"Dinner — Kaiseki (e.g., Kikunoi or Hyotei)","note":"Reserve in advance for an authentic multi-course Kyoto experience; alternative: local izakaya or yakitori in Pontocho","reserve":"recommended"}
+        ]
+      },
+      "tips":"Wear comfortable shoes — Higashiyama involves hills and stone lanes. Evening kaiseki requires reservation and dress etiquette."
+    },
+    {
+      "day": 2,
+      "title":"Arashiyama & Western Kyoto — Gardens, Bamboo Grove, Tempura",
+      "morning": {
+        "time":"07:30–12:30",
+        "activities":[
+          {"name":"Arashiyama Bamboo Grove (early)","note":"Visit early to avoid crowds; pair with Togetsukyo Bridge photos","duration_min":"45–60"},
+          {"name":"Tenryu‑ji & garden","note":"Zen temple with outstanding stroll garden (UNESCO component)","duration_min":"60–90"},
+          {"name":"Okochi Sanso or stroll riverside","note":"Optional villa garden or riverside walk","duration_min":"45–60"}
+        ]
+      },
+      "lunch": {
+        "time":"12:30–14:00",
+        "options":[
+          {"name":"Tempura in Arashiyama (e.g., Tempura Matsu)","note":"High‑quality tempura near Arashiyama for a leisurely lunch; reserve if possible"},
+          {"name":"Casual soba/yuba restaurants","note":"Local specialties near the river"}
+        ]
+      },
+      "afternoon": {
+        "time":"14:30–17:00",
+        "activities":[
+          {"name":"Monkey Park Iwatayama (optional)","note":"Short hike, city views; seasonal crowds"},
+          {"name":"Sagano scenic walk / rental boat or river views","note":"Relaxed cultural/nature time"}
+        ]
+      },
+      "evening": {
+        "time":"18:00+",
+        "activities":[
+          {"name":"Return to central Kyoto — dinner in Pontocho or Nishiki/teramachi area","note":"Try yakitori, izakaya or light sushi; longer option: Michelin tempura counter in central Kyoto"},
+          {"name":"Night stroll along Kamogawa river","note":"Atmospheric walk after dinner"}
+        ]
+      },
+      "tips":"Arashiyama is full-day if you prefer slower pace. Reserve tempura restaurants in advance; some close mid‑afternoon for breaks."
+    },
+    {
+      "day": 3,
+      "title":"Northern Temples & Imperial Villas — Kinkaku, Ryoanji, Culture of Gardens",
+      "morning": {
+        "time":"08:30–12:30",
+        "activities":[
+          {"name":"Kinkaku‑ji (Golden Pavilion)","note":"Start early to beat midday crowds; iconic reflecting pond","duration_min":"45–60"},
+          {"name":"Ryoan‑ji (Zen rock garden)","note":"Short walk from Kinkaku‑ji; famous kare‑sansui garden","duration_min":"45–60"}
+        ]
+      },
+      "lunch": {
+        "time":"12:30–13:30",
+        "options":[
+          {"name":"Local soba/yudofu/kaiseki lunch near Kinkaku‑ji or in Kita-ku","note":"Casual regional cuisine"}
+        ]
+      },
+      "afternoon": {
+        "time":"14:00–17:00",
+        "activities":[
+          {"name":"Ninna‑ji or Katsura Imperial Villa / Shugakuin (if pre‑booked)","note":"Ninna‑ji is nearby and UNESCO; Katsura/Shugakuin require advance reservations but are garden masterpieces","duration_min":"60–120"},
+          {"name":"Optional workshop: Nishijin textile centre (kimono demonstration) or pottery studio","note":"Book in advance for hands‑on kimono dressing or weaving demo"}
+        ]
+      },
+      "evening": {
+        "time":"18:00+",
+        "activities":[
+          {"name":"Dinner — sushi omakase or Michelin tempura/kaiseki alternative","note":"Smaller counters in central Kyoto (reserve)"},
+          {"name":"Gion/Pontocho stroll (alternate if missed on Day 1)","note":"Evening atmosphere and small bars"}
+        ]
+      },
+      "tips":"Katsura & Shugakuin require reservations well ahead; Ninna‑ji and Ryoan‑ji fill midday with tour groups — go early."
+    },
+    {
+      "day": 4,
+      "title":"Fushimi Inari, Sake District & Uji Tea Culture — Shrine hike + Tasting",
+      "morning": {
+        "time":"06:30–10:30",
+        "activities":[
+          {"name":"Fushimi Inari Taisha — early hike through torii gates","note":"Start at dawn or early morning to avoid the biggest crowds; explore a few km of trails","duration_min":"60–120"}
+        ]
+      },
+      "late_morning": {
+        "time":"10:30–12:30",
+        "activities":[
+          {"name":"Fushimi Sake District — Gekkeikan Okura Sake Museum and tasting","note":"Learn about sake brewing; sample local varieties; lunch options in district","duration_min":"60–90"}
+        ]
+      },
+      "afternoon": {
+        "time":"13:30–17:00",
+        "activities":[
+          {"name":"Train to Uji — Byodoin Temple & tea shops","note":"Byodoin (UNESCO‑related site nearby) then try matcha desserts; wagashi or tea workshop if booked","duration_min":"120–180"}
+        ]
+      },
+      "evening": {
+        "time":"18:30+",
+        "activities":[
+          {"name":"Return to Kyoto station area — dinner at Kyoto Ramen Koji (Isetan) or central ramen/sushi","note":"Good place to sample multiple ramen styles under one roof, or choose a cozy local ramen shop"}
+        ]
+      },
+      "tips":"Fushimi Inari is busiest mid‑day — early visit recommended. Uji is famous for green tea; schedule tea‑related experiences here. Sake museum visits often include tastings for a fee."
+    },
+    {
+      "day": 5,
+      "title":"Museums, Nishiki Market & Hands‑On Experiences — Culture + Last‑minute Tasting",
+      "morning": {
+        "time":"09:00–12:30",
+        "activities":[
+          {"name":"Kyoto National Museum & Sanjusangendo or Kyoto City/Kyocera Museum of Art","note":"Choose based on interest (Buddhist art & history vs modern art). Sanjusangendo (long hall with 1000 statues) pairs well with the museum","duration_min":"90–150"}
+        ]
+      },
+      "lunch": {
+        "time":"12:30–14:00",
+        "activities":[
+          {"name":"Nishiki Market food crawl","note":"Sample yuba, pickles, grilled skewers, sweets, fresh seafood and street snacks; best mid‑day","duration_min":"60–90"}
+        ]
+      },
+      "afternoon": {
+        "time":"14:30–17:00",
+        "activities":[
+          {"name":"Hands‑on workshop (pottery / wagashi / kimono photos) or Kyoto International Manga Museum","note":"Book a 90–120 minute pottery or wagashi class; alternative cultural museum visit for variety","duration_min":"90–120"},
+          {"name":"Philosopher's Path stroll (if time & season)","note":"Combine with nearby temples (Ginkaku‑ji) if not yet visited"}
+        ]
+      },
+      "evening": {
+        "time":"18:00+",
+        "activities":[
+          {"name":"Farewell dinner — choose based on priority (final kaiseki, tempura counter or lively izakaya)","note":"Reserve for a memorable final meal; otherwise return to favorite market stalls for casual tasting"}
+        ]
+      },
+      "tips":"Nishiki Market vendors may close earlier; shop for packaged souvenirs (pickles, sweets) late afternoon. Museums often have weekday/holiday hours — verify in advance."
+    }
+  ],
+  "alternative_options_and_additions": [
+    "Swap Day 3 or Day 5 museum time for a full‑day visit to the Kyoto Imperial Palace & gardens (advance notifications may be needed).",
+    "If interested in samurai/ninja experiences, schedule a short interactive performance/class on an afternoon with lighter sight‑seeing.",
+    "If staying a sixth day, consider a day trip to Nara (Todaiji, Nara Park) or extended Uji/Ohara exploration."
+  ]
+}
 
-Day 3 — Northern Temples & Philosophers’ Path (temples, gardens, tea)
-- 08:30 — Kinkaku‑ji (Golden Pavilion). Duration: 1 hr. Tip: mornings are best for photos.
-- 09:45 — Ryoan‑ji rock garden (nearby). Duration: 45–60 min.
-- 11:30 — Lunch: local soba or tempura near Kinkaku area. Duration: 1 hr.
-- 13:00 — Philosopher’s Path walk → Ginkaku‑ji (Silver Pavilion). Duration: 1.5–2 hrs. Purpose: pleasant walking route and smaller shrines.
-- 15:30 — Tea break: matcha sweets and tea at a teahouse along the path or book a short tea‑ceremony demonstration (reserve in advance). Duration: 1–1.5 hrs.
-- 18:30 — Dinner: kaiseki or multi‑course ryōtei (consider Hyotei or similar — reserve weeks ahead). Duration: 2 hrs.
-- Evening: optional cultural performance (maiko show / dance) or guided Gion walk (booked experience recommended).
-
-Day 4 — Fushimi & Uji (sake + tea day trip)
-- 06:30 — Very early: Fushimi Inari Taisha (walk through torii gates before crowds). Duration: 1.5–2 hrs if doing partial hike.
-- 09:30 — Head to Fushimi sake district: brewery tours & tastings; lunch at nearby tavern (try dishes paired with local sakes). Duration: 2–3 hrs. Tip: some breweries require reservations for tours/tastings.
-- 13:30 — Train to Uji (approx. 20–30 min): visit Byodoin (Phoenix Hall) or tea houses; Uji is famous for premium matcha. Duration: 2–3 hrs.
-- 16:30 — Return to Kyoto city center. Short rest.
-- 19:00 — Dinner: casual/specialty dinner (okonomiyaki, Kyoto home‑style kaiseki, or yakitori). Consider depachika bento sampling if tired.
-
-Day 5 — Hands‑on Culture, Museums & Final Dinner
-- 08:30 — Morning cultural workshop: kimono dressing + photo opportunity or calligraphy/ikebana class (book in advance). Duration: 2–2.5 hrs.
-- 11:30 — Brunch/light lunch: try Kyoto sweets (wagashi) with matcha or a casual noodle shop.
-- 13:00 — Museum visit (choose one): Kyoto National Museum or Kyoto City KYOCERA Museum of Art / Kyoto International Manga Museum. Duration: 1.5–2.5 hrs. Tip: check exhibition times in advance.
-- 15:30 — Nishijin Textile district visit (textile/kimono weaving museum) or shopping for last souvenirs; or relax at a cafe in Gion/Higashiyama.
-- 18:30 — Farewell dinner: special kaiseki (if not yet done) or a multi‑course meal at a MICHELIN‑recommended restaurant (Kikunoi, Hyotei etc.) — reservation required. Alternative: relaxed izakaya crawl in Pontocho.
-- Evening: pack/prepare for departure next day.
-
-General timing & transport guidance
-- Start early (07:00–08:30) for outdoor/high‑demand sites (Fushimi Inari, Arashiyama bamboo grove, Kinkaku‑ji). Afternoon museum visits avoid the morning rush. Evening meals are best reserved for popular kaiseki and maiko shows.
-- Typical transfer times inside Kyoto: 15–40 minutes by subway/train/taxi between major districts; buses connect many temple areas but can be slow in peak traffic. Use subway/rail for faster travel across the city.
-- Reservations required/recommended: kaiseki ryōtei (Kikunoi, Hyotei, Kitcho), tea‑ceremony workshops, kimono dressing, brewery tours and maiko performances. For casual street/market meals no reservation needed.
-- Crowd & etiquette tips: avoid weekends/holiday peak for popular spots if possible; be respectful in geisha districts (do not follow or pressure photographers); don’t eat while walking at some sacred streets — eat at stalls or designated spots. (Sources: Kyoto Travel, Japan Guide)
-
-Optional swaps & variations
-- If you prefer fewer high‑end meals, replace one kaiseki dinner with an extended market/izakaya crawl in Pontocho or Nishiki.
-- If staying fewer nights, combine Day 3 & Day 5 activities (Northern temples + workshop + museum) into one long day — expect a full, active schedule.
-- If interested in onsen: schedule on Arashiyama day or near departure for relaxation.
-
-Selected source references for verification
-- Kyoto City Official Guide — attractions, food, cultural experiences: https://kyoto.travel/en/
-- Japan National Tourism Organization (Kyoto overview): https://www.japan.travel/en/destinations/kansai/kyoto/
-- Nishiki Market & food notes — Japan Guide: https://www.japan-guide.com/e/e3931.html
-- MICHELIN Guide — restaurant selections and recommendations: https://guide.michelin.com/
+Step completion statement: No web calls were needed for this step; itinerary assembled from prior research (UNESCO/InsideKyoto/Japan‑Guide sources referenced above).
 
 <END_OF_STEP>
 [Agent] Ending step, found end tag
 [Steps] Finished step 3/3
 [Steps] Finished all steps, summarizing results.
 [Agent] Thinking...
-[Agent] Purpose and approach
-This research identified the cultural highlights, food experiences, and practical dining options in Kyoto, then used those findings to build a balanced 5‑day itinerary that mixes sightseeing, hands‑on cultural activities, and meals. I examined iconic temples, traditional districts, museums, markets, recommended restaurants (from mainstream guides and curated selections), and organized everything for efficient timing and a strong cultural + culinary experience.
+[Agent] Reasoning:
+I synthesized the previous research into a single, user-focused narrative that connects the cultural attractions, museums, gardens, markets, restaurants, hands‑on experiences, and the 5‑day itinerary. I organized the material so a traveler or planner can quickly understand what to see, where to eat, how to experience traditional culture, and why certain choices were recommended—while preserving practical notes about timing and reservations. No technical details about how the research was gathered are included.
 
-Key findings (integrated)
-- Core cultural must-sees: Fushimi Inari Taisha (thousands of torii), Kiyomizu‑dera with the historic Ninenzaka/Sannenzaka lanes, Kinkaku‑ji (Golden Pavilion), Ginkaku‑ji (Philosopher’s Path), Tenryu‑ji and the Arashiyama bamboo grove, and principal museums such as Kyoto National Museum and Kyoto City KYOCERA Museum of Art. These sites form the backbone of a culture‑focused visit and are best scheduled early to avoid crowds.
-- Traditional districts for atmosphere and photography: Gion (Hanamachi), Pontocho alley, Higashiyama streets — great for evening walks, geisha/maiko spotting (with respectful behavior), and atmospheric dining.
-- Food hubs and specialties: Nishiki Market is the top market for sampling local specialties (yuba, pickles, dashimaki, grilled snacks). Uji is the destination for premium matcha and tea‑ceremony experiences; Fushimi is the sake district for brewery visits and tastings. Kyoto’s signature cuisines include kaiseki (formal multi‑course), tofu/yudofu, shojin‑ryori (temple vegetarian), and local sweets (kyo‑gashi).
-- Dining options and recommendations: For an authentic mix, combine market stalls and casual izakaya with at least one high‑end kaiseki dinner (notable names include Kikunoi, Hyotei, Kitcho — these require advance reservations). Michelin and Bib Gourmand lists highlight both top haute cuisine and excellent value spots (ramen, yakitori, soba).
-- Practical patterns: Start popular outdoor sites early (07:00–09:00); reserve evenings for kaiseki or maiko performances; use trains/subways for faster cross‑city travel and buses for direct temple access; book workshops (tea ceremony, kimono dressing, brewery tours) in advance. Respect local etiquette in geisha districts and food markets (no chasing/pressuring performers; avoid eating while walking in certain areas).
+Introduction
+This research set out to identify the must‑see cultural sights, museums, gardens, temples, shrines, hands‑on cultural experiences, and top local food spots in Kyoto, and then to turn those findings into a practical 5‑day itinerary that balances sightseeing with authentic dining and tasting opportunities. The goal was to give a clear, actionable guide for culture and food enthusiasts who want to experience Kyoto’s historic monuments, refined seasonal cuisine, lively markets, and immersive workshops without feeling rushed.
 
-5‑day itinerary overview (high‑level)
-Day 1 — Higashiyama & Nishiki Market
-- Morning market crawl (Nishiki) → Kiyomizu‑dera and Ninenzaka/Sannenzaka → Gion stroll → dinner in Pontocho. Good intro to Kyoto’s streets, sweets and early kaiseki/izakaya.
+Research Process Overview
+First, I reviewed authoritative lists of Kyoto’s cultural landmarks—especially the internationally recognized sites that form the backbone of Kyoto’s historic identity. From there I focused on the categories most relevant to culture and food lovers: major temples and shrines (including UNESCO components), traditional Japanese gardens and imperial villas, museums and craft institutions, and neighborhoods that concentrate historic atmosphere and performance (Gion, Higashiyama, Arashiyama, etc.).
 
-Day 2 — Arashiyama & Sagano
-- Early bamboo grove visit → Tenryu‑ji garden → yudofu lunch → optional scenic train/boat → riverside dinner or station‑area izakaya. A nature‑temple day with tofu specialties.
+Next I examined Kyoto’s culinary scene, identifying the city’s standouts in kaiseki (multi‑course Kyoto haute cuisine), tempura counters, sushi (including Kyoto’s regional pressed styles), and local ramen specialties. I also mapped where to sample street food and small bites—market corridors, ramen lanes, and station food halls.
 
-Day 3 — Northern temples & Philosopher’s Path
-- Kinkaku‑ji → Ryoan‑ji → Philosopher’s Path to Ginkaku‑ji → afternoon tea/tea‑ceremony → evening kaiseki or cultural performance. Focus on gardens, contemplative walks, and matcha.
+Finally, I integrated these cultural and culinary priorities into a balanced 5‑day itinerary so a visitor can experience iconic sights at appropriate times of day, while sampling markets, scheduled workshops, and reserved meals without excessive transit or crowd pressure.
 
-Day 4 — Fushimi (sake) and Uji (tea)
-- Early Fushimi Inari → Fushimi brewery tours & tastings → train to Uji for Byodoin and matcha tastings → relaxed evening meal back in Kyoto. Dedicated sake + tea day trip.
+Detailed Findings
 
-Day 5 — Hands‑on culture, museums, and farewell dining
-- Morning workshop (kimono dressing, ikebana, or calligraphy) → museum visit (Kyoto National Museum or Manga Museum) → Nishijin textiles or last shopping → special farewell dinner (another kaiseki or izakaya crawl). Wind down with cultural immersion and souvenir shopping.
+Cultural Core: UNESCO sites, temples and gardens
+- Kyoto’s UNESCO components form a concentrated set of historic temples, shrines and castles that best convey the city’s cultural legacy. Highlights to prioritize include Kiyomizu‑dera (Higashiyama’s hilltop temple and historic lanes), Kinkaku‑ji (the Golden Pavilion with its reflective pond), Ginkaku‑ji (the Silver Pavilion and its calm gardens), Ryoan‑ji (world‑famous dry rock (kare‑sansui) garden), Tenryu‑ji (Arashiyama’s major Zen temple and stroll garden), and Nijo Castle (the Tokugawa-era palace with expansive grounds).
+- Imperial and aristocratic garden sites such as Katsura Imperial Villa and Shugakuin Imperial Villa are garden masterpieces. They often require advance reservations but reward visitors with exemplary classical garden design and formality.
+- Many of these places are best visited early in the day to avoid crowds and to appreciate the atmosphere—especially outdoor shrines (like Fushimi Inari) and hillside temples (like Kiyomizu‑dera).
 
-Top practical tips (concise)
-- Timing: beat crowds at Fushimi Inari, Arashiyama bamboo grove and Kiyomizu by going early; reserve kaiseki and workshops well ahead.
-- Reservations: required for high‑end ryōtei and recommended for tea ceremonies, kimono sessions, and some brewery tours.
-- Etiquette: respect geiko/maiko privacy; follow stall rules at markets; carry small bags for trash—public bins are limited.
-- Transport: use trains/subways between districts; buses are useful for temple clusters but can be slower in traffic.
+Traditional Gardens & Smaller Temple Experiences
+- Kyoto’s garden tradition is varied: stroll gardens (Tenryu‑ji), dry rock Zen gardens (Ryoan‑ji), moss gardens (Saiho‑ji/Koke‑dera, which often needs prior reservation), and villa gardens (Katsura). Visiting a mix gives a fuller sense of Japanese aesthetic principles—simplicity, seasonal emphasis, and asymmetry.
+- Some smaller or reservation‑only gardens require planning; incorporating at least one scheduled garden visit enriches the trip considerably.
 
-Sources (most useful for planning and bookings)
-- Kyoto City Official Travel (attractions, food, cultural experiences): https://kyoto.travel/en/
-- Japan National Tourism Organization — Kyoto overview: https://www.japan.travel/en/destinations/kansai/kyoto/
-- Japan Guide — Nishiki Market and practical food notes: https://www.japan-guide.com/e/e3931.html
-- MICHELIN Guide — Kyoto & Osaka restaurant selections (stars, Bib Gourmand): https://guide.michelin.com/
+Museums & Cultural Institutions
+- Kyoto National Museum is the principal repository of regional art and Buddhist artifacts and pairs well with nearby temples such as Sanjusangendo (famous for its thousand-armed Kannon statues).
+- The National Museum of Modern Art (MOMAK) and Kyoto City/Kyocera Museum of Art are excellent for 20th‑century and contemporary work.
+- Niche institutions like the Kyoto International Manga Museum or the Raku family ceramics museum offer focused cultural perspectives—popular additions for visitors with specific interests in manga culture or tea‑ceremony ceramics.
 
-Conclusions
-Kyoto offers a compact, richly layered cultural experience that pairs naturally with distinctive regional cuisine. Structure your days so mornings tackle the busiest outdoor temples, midday is for market and specialty food sampling, afternoons for museums or relaxed walks, and evenings for reserved kaiseki or lively izakaya dining. Reserve key cultural workshops and high‑end dinners in advance, and plan at least one day each for Arashiyama and the Fushimi/Uji pair to experience Kyoto’s nature, sake, and tea traditions.
+Food Scene: High cuisine to street bites
+- Kaiseki: Kyoto is synonymous with kaiseki, where each course reflects seasonality and presentation. Notable, long‑established houses (e.g., Kikunoi, Hyotei, Kitcho) provide an immersive, formal dining experience; these require advanced reservations and represent the pinnacle of Kyoto dining.
+- Tempura: Kyoto has both traditional counter tempura houses and modern interpretations. High‑end tempura counters offer omakase courses and precise frying techniques, while casual tempura stalls can be found near markets and scenic neighborhoods.
+- Sushi: Kyoto also preserves regional sushi styles (pressed mackerel/saba sushi is a local tradition). Small omakase counters in districts like Gion and Shijo serve focused, intimate sushi experiences—again, booking in advance is recommended.
+- Ramen: Kyoto’s ramen scene includes unique local varieties (for example, smoky “burnt” broths and theatrical “fire ramen” shops) and many beloved neighborhood shops. For sampling multiple styles in one place, the station ramen hall collects specialty shops under one roof.
+- Markets & Street Food: Nishiki Market—often called “Kyoto’s Kitchen”—is the prime corridor for tasting local specialties: yuba (tofu skin), pickles, skewers, seasonal fish dishes, senbei, sweets, and ready-to-eat small plates. Teramachi, Shinkyogoku and nearby side streets provide additional stalls, small eateries, and snack options.
+
+Hands‑on Cultural Experiences
+- Tea ceremony and matcha workshops: Kyoto provides many short tea‑ceremony experiences that teach matcha preparation and tea‑room etiquette—ideal as a cultural highlight in a morning or early afternoon.
+- Kimono dressing and Nishijin textile demos: Visitors can experience professional kimono dressing and learn about Nishijin weaving techniques; some centers combine dressing with photography.
+- Pottery and wagashi (traditional confectionery) classes: These workshops offer hands‑on craft learning that pairs well with museum visits or market tastings.
+- Zazen (Zen meditation) and temple‑led experiences: Short meditation sessions at qualified temples give deeper insight into monastic practices and calming cultural rituals.
+
+Neighborhoods and Walks
+- Higashiyama and Gion: For classic historical streets, teahouses, and the chance to see geiko/maiko, the Gion area is essential. Evening strolls in Pontocho and along the Kamogawa river are atmospheric.
+- Arashiyama: Offers a combination of nature (bamboo grove, river views) and major temples (Tenryu‑ji), best visited early or as a full‑day excursion.
+- Northern Kyoto (Kinkaku‑ji, Ryoan‑ji, Ninna‑ji): A compact cluster of highlights focused on gardens and Zen aesthetics.
+- Fushimi: Known for the torii‑gate hike at Fushimi Inari and for its historic sake breweries and tasting facilities.
+
+Practical Notes and Visit Planning
+- Reservations: Many top kaiseki restaurants, omakase sushi counters, high‑end tempura counters, and imperial villa visits require reservations and often fill well in advance; plan these first.
+- Timing: Early mornings are ideal for popular outdoor sites to avoid crowds; mid‑morning is ideal for market visits; dinner slots are often the busiest for upscale restaurants.
+- Pairings: Combine nearby attractions into single blocks to minimize transit time—e.g., Kiyomizu‑dera with Higashiyama lanes and an afternoon tea ceremony in Gion, or Kinkaku‑ji with Ryoan‑ji and a later visit to Ninna‑ji.
+- Transport: Use a mix of subway, JR lines, local buses and short taxi rides; an IC transit card saves time. Expect 20–45 minute transits when moving across the city.
+
+5‑Day Itinerary (conceptual highlights)
+- Day 1: Higashiyama & Gion — Kiyomizu‑dera, historic lanes, tea ceremony, evening kaiseki or izakaya in Gion.
+- Day 2: Arashiyama — Bamboo Grove, Tenryu‑ji garden, riverside walks, tempura lunch; evening in central Kyoto or Pontocho.
+- Day 3: Northern Kyoto gardens — Kinkaku‑ji (Golden Pavilion), Ryoan‑ji, optional Katsura/Shugakuin or Ninna‑ji; evening sushi or tempura counter.
+- Day 4: Fushimi & Uji — Early Fushimi Inari torii hike, sake district and tasting, train to Uji for Byodoin and tea tastings/workshop; ramen or station food hall in evening.
+- Day 5: Museums & Markets — Kyoto National Museum (or MOMAK), Sanjusangendo, Nishiki Market food crawl, hands‑on workshop (pottery/wagashi/kimono), farewell dinner.
+
+Interpretation and Implications
+- Balanced experience: The recommended approach blends big-name sights with intimate cultural experiences. Visiting UNESCO monuments and major temples satisfies the “iconic Kyoto” experience, while markets, workshops, and carefully chosen restaurants provide sensory, participatory layers that make the trip personal and memorable.
+- Seasonality matters: Kyoto’s offerings are deeply seasonal—gardens, kaiseki menus, festival timings, and street food specialties change with the year. Travelers who align visits with cherry blossoms, autumn color, or seasonal menus will get the fullest cultural expression of Kyoto.
+- Booking priorities: Secure limited‑capacity experiences (kaiseki, omakase, imperial villa visits, and some workshops) early. For visitors with specific culinary priorities, reserving at least one formal dining experience (a kaiseki or high‑end tempura) transforms an ordinary trip into a defining culinary memory.
+- Accessibility of variety: Kyoto offers a spectrum from high‑formality rituals (tea ceremony, kaiseki) to casual, communal eating (market stalls, ramen shops). Building a trip that includes both gives a rounded perspective on Kyoto’s food culture and social customs.
+
+Summary of Key Insights
+- Kyoto’s cultural core is best experienced as a layered combination of UNESCO monuments and other major temples, carefully selected museums, and immersive local experiences such as tea ceremonies and craft workshops.
+- Food in Kyoto ranges from world‑class kaiseki and refined tempura counters to vibrant market stalls—both are essential: kaiseki for formal seasonal cuisine, and markets/street food for variety and immediacy.
+- Early timing for outdoor attractions and advance reservations for top dining and limited garden visits will maximize enjoyment and minimize time spent waiting in lines.
+- Neighborhood‑based planning (Higashiyama/Gion, Arashiyama, Northern temples, Fushimi/Uji, central markets/museums) keeps transit efficient and allows meaningful cultural immersion each day.
+- The proposed 5‑day itinerary balances “must‑see” landmarks with tasting tours and hands‑on activity, giving visitors a confident path through Kyoto’s cultural and culinary highlights.
+
+Sources and References
+- UNESCO — Historic Monuments of Ancient Kyoto (World Heritage listing)
+  URL: https://whc.unesco.org/en/list/688
+  Note: Authoritative listing of Kyoto’s UNESCO components used to identify core temples, shrines and historic sites.
+
+- InsideKyoto — Things to do in Kyoto; best lists for kaiseki and tempura
+  URLs:
+    - https://www.insidekyoto.com/things-to-do-in-kyoto
+    - https://www.insidekyoto.com/best-kaiseki-japanese-haute-cuisine-in-kyoto
+    - https://www.insidekyoto.com/best-tempura-in-kyoto
+    - https://www.insidekyoto.com/kyoto-unesco-world-heritage-sites
+  Note: Practical guides and curated restaurant recommendations for kaiseki, tempura, attractions, and neighborhood walks; used to prioritize dining and cultural experiences.
+
+- Japan‑Guide — Kyoto museums, experiences and practical travel information
+  URL: https://www.japan-guide.com/e/e3962.html
+  Note: Overview of Kyoto’s museums, cultural activities, and visitor guidance; used to map museums and hands‑on experiences like tea ceremonies and workshops.
+
+- Seikatsumi — Ramen guide (Kyoto ramen highlights)
+  URL: https://seikatsumi.com/discover-the-best-ramen-in-kyoto-a-noodle-guide/
+  Note: Overview of notable ramen shops and regional ramen styles referenced when selecting ramen highlights and market/ramen‑lane options.
+
+These sources provided the factual backbone for the recommendations, dining highlights, and itinerary structure. They collectively show both the historic significance of Kyoto’s monuments and the practical, sensory ways to experience the city’s food culture.
+
+Final note
+This report delivers an integrated view of Kyoto for culture and food enthusiasts: what to see, where to taste, which experiences to book ahead, and how to structure five days so each day feels full but unhurried. Use the itinerary as a flexible template—swap workshops or restaurant choices to match personal taste and season—and prioritize one or two reserved experiences (a kaiseki dinner, a tea ceremony, or a pottery workshop) to create lasting memories.
 
 <END_OF_STEP>
 [Agent] Ending step, found end tag
 ================================================================================
-Purpose and approach
-This research identified the cultural highlights, food experiences, and practical dining options in Kyoto, then used those findings to build a balanced 5‑day itinerary that mixes sightseeing, hands‑on cultural activities, and meals. I examined iconic temples, traditional districts, museums, markets, recommended restaurants (from mainstream guides and curated selections), and organized everything for efficient timing and a strong cultural + culinary experience.
+Reasoning:
+I synthesized the previous research into a single, user-focused narrative that connects the cultural attractions, museums, gardens, markets, restaurants, hands‑on experiences, and the 5‑day itinerary. I organized the material so a traveler or planner can quickly understand what to see, where to eat, how to experience traditional culture, and why certain choices were recommended—while preserving practical notes about timing and reservations. No technical details about how the research was gathered are included.
 
-Key findings (integrated)
-- Core cultural must-sees: Fushimi Inari Taisha (thousands of torii), Kiyomizu‑dera with the historic Ninenzaka/Sannenzaka lanes, Kinkaku‑ji (Golden Pavilion), Ginkaku‑ji (Philosopher’s Path), Tenryu‑ji and the Arashiyama bamboo grove, and principal museums such as Kyoto National Museum and Kyoto City KYOCERA Museum of Art. These sites form the backbone of a culture‑focused visit and are best scheduled early to avoid crowds.
-- Traditional districts for atmosphere and photography: Gion (Hanamachi), Pontocho alley, Higashiyama streets — great for evening walks, geisha/maiko spotting (with respectful behavior), and atmospheric dining.
-- Food hubs and specialties: Nishiki Market is the top market for sampling local specialties (yuba, pickles, dashimaki, grilled snacks). Uji is the destination for premium matcha and tea‑ceremony experiences; Fushimi is the sake district for brewery visits and tastings. Kyoto’s signature cuisines include kaiseki (formal multi‑course), tofu/yudofu, shojin‑ryori (temple vegetarian), and local sweets (kyo‑gashi).
-- Dining options and recommendations: For an authentic mix, combine market stalls and casual izakaya with at least one high‑end kaiseki dinner (notable names include Kikunoi, Hyotei, Kitcho — these require advance reservations). Michelin and Bib Gourmand lists highlight both top haute cuisine and excellent value spots (ramen, yakitori, soba).
-- Practical patterns: Start popular outdoor sites early (07:00–09:00); reserve evenings for kaiseki or maiko performances; use trains/subways for faster cross‑city travel and buses for direct temple access; book workshops (tea ceremony, kimono dressing, brewery tours) in advance. Respect local etiquette in geisha districts and food markets (no chasing/pressuring performers; avoid eating while walking in certain areas).
+Introduction
+This research set out to identify the must‑see cultural sights, museums, gardens, temples, shrines, hands‑on cultural experiences, and top local food spots in Kyoto, and then to turn those findings into a practical 5‑day itinerary that balances sightseeing with authentic dining and tasting opportunities. The goal was to give a clear, actionable guide for culture and food enthusiasts who want to experience Kyoto’s historic monuments, refined seasonal cuisine, lively markets, and immersive workshops without feeling rushed.
 
-5‑day itinerary overview (high‑level)
-Day 1 — Higashiyama & Nishiki Market
-- Morning market crawl (Nishiki) → Kiyomizu‑dera and Ninenzaka/Sannenzaka → Gion stroll → dinner in Pontocho. Good intro to Kyoto’s streets, sweets and early kaiseki/izakaya.
+Research Process Overview
+First, I reviewed authoritative lists of Kyoto’s cultural landmarks—especially the internationally recognized sites that form the backbone of Kyoto’s historic identity. From there I focused on the categories most relevant to culture and food lovers: major temples and shrines (including UNESCO components), traditional Japanese gardens and imperial villas, museums and craft institutions, and neighborhoods that concentrate historic atmosphere and performance (Gion, Higashiyama, Arashiyama, etc.).
 
-Day 2 — Arashiyama & Sagano
-- Early bamboo grove visit → Tenryu‑ji garden → yudofu lunch → optional scenic train/boat → riverside dinner or station‑area izakaya. A nature‑temple day with tofu specialties.
+Next I examined Kyoto’s culinary scene, identifying the city’s standouts in kaiseki (multi‑course Kyoto haute cuisine), tempura counters, sushi (including Kyoto’s regional pressed styles), and local ramen specialties. I also mapped where to sample street food and small bites—market corridors, ramen lanes, and station food halls.
 
-Day 3 — Northern temples & Philosopher’s Path
-- Kinkaku‑ji → Ryoan‑ji → Philosopher’s Path to Ginkaku‑ji → afternoon tea/tea‑ceremony → evening kaiseki or cultural performance. Focus on gardens, contemplative walks, and matcha.
+Finally, I integrated these cultural and culinary priorities into a balanced 5‑day itinerary so a visitor can experience iconic sights at appropriate times of day, while sampling markets, scheduled workshops, and reserved meals without excessive transit or crowd pressure.
 
-Day 4 — Fushimi (sake) and Uji (tea)
-- Early Fushimi Inari → Fushimi brewery tours & tastings → train to Uji for Byodoin and matcha tastings → relaxed evening meal back in Kyoto. Dedicated sake + tea day trip.
+Detailed Findings
 
-Day 5 — Hands‑on culture, museums, and farewell dining
-- Morning workshop (kimono dressing, ikebana, or calligraphy) → museum visit (Kyoto National Museum or Manga Museum) → Nishijin textiles or last shopping → special farewell dinner (another kaiseki or izakaya crawl). Wind down with cultural immersion and souvenir shopping.
+Cultural Core: UNESCO sites, temples and gardens
+- Kyoto’s UNESCO components form a concentrated set of historic temples, shrines and castles that best convey the city’s cultural legacy. Highlights to prioritize include Kiyomizu‑dera (Higashiyama’s hilltop temple and historic lanes), Kinkaku‑ji (the Golden Pavilion with its reflective pond), Ginkaku‑ji (the Silver Pavilion and its calm gardens), Ryoan‑ji (world‑famous dry rock (kare‑sansui) garden), Tenryu‑ji (Arashiyama’s major Zen temple and stroll garden), and Nijo Castle (the Tokugawa-era palace with expansive grounds).
+- Imperial and aristocratic garden sites such as Katsura Imperial Villa and Shugakuin Imperial Villa are garden masterpieces. They often require advance reservations but reward visitors with exemplary classical garden design and formality.
+- Many of these places are best visited early in the day to avoid crowds and to appreciate the atmosphere—especially outdoor shrines (like Fushimi Inari) and hillside temples (like Kiyomizu‑dera).
 
-Top practical tips (concise)
-- Timing: beat crowds at Fushimi Inari, Arashiyama bamboo grove and Kiyomizu by going early; reserve kaiseki and workshops well ahead.
-- Reservations: required for high‑end ryōtei and recommended for tea ceremonies, kimono sessions, and some brewery tours.
-- Etiquette: respect geiko/maiko privacy; follow stall rules at markets; carry small bags for trash—public bins are limited.
-- Transport: use trains/subways between districts; buses are useful for temple clusters but can be slower in traffic.
+Traditional Gardens & Smaller Temple Experiences
+- Kyoto’s garden tradition is varied: stroll gardens (Tenryu‑ji), dry rock Zen gardens (Ryoan‑ji), moss gardens (Saiho‑ji/Koke‑dera, which often needs prior reservation), and villa gardens (Katsura). Visiting a mix gives a fuller sense of Japanese aesthetic principles—simplicity, seasonal emphasis, and asymmetry.
+- Some smaller or reservation‑only gardens require planning; incorporating at least one scheduled garden visit enriches the trip considerably.
 
-Sources (most useful for planning and bookings)
-- Kyoto City Official Travel (attractions, food, cultural experiences): https://kyoto.travel/en/
-- Japan National Tourism Organization — Kyoto overview: https://www.japan.travel/en/destinations/kansai/kyoto/
-- Japan Guide — Nishiki Market and practical food notes: https://www.japan-guide.com/e/e3931.html
-- MICHELIN Guide — Kyoto & Osaka restaurant selections (stars, Bib Gourmand): https://guide.michelin.com/
+Museums & Cultural Institutions
+- Kyoto National Museum is the principal repository of regional art and Buddhist artifacts and pairs well with nearby temples such as Sanjusangendo (famous for its thousand-armed Kannon statues).
+- The National Museum of Modern Art (MOMAK) and Kyoto City/Kyocera Museum of Art are excellent for 20th‑century and contemporary work.
+- Niche institutions like the Kyoto International Manga Museum or the Raku family ceramics museum offer focused cultural perspectives—popular additions for visitors with specific interests in manga culture or tea‑ceremony ceramics.
 
-Conclusions
-Kyoto offers a compact, richly layered cultural experience that pairs naturally with distinctive regional cuisine. Structure your days so mornings tackle the busiest outdoor temples, midday is for market and specialty food sampling, afternoons for museums or relaxed walks, and evenings for reserved kaiseki or lively izakaya dining. Reserve key cultural workshops and high‑end dinners in advance, and plan at least one day each for Arashiyama and the Fushimi/Uji pair to experience Kyoto’s nature, sake, and tea traditions.
+Food Scene: High cuisine to street bites
+- Kaiseki: Kyoto is synonymous with kaiseki, where each course reflects seasonality and presentation. Notable, long‑established houses (e.g., Kikunoi, Hyotei, Kitcho) provide an immersive, formal dining experience; these require advanced reservations and represent the pinnacle of Kyoto dining.
+- Tempura: Kyoto has both traditional counter tempura houses and modern interpretations. High‑end tempura counters offer omakase courses and precise frying techniques, while casual tempura stalls can be found near markets and scenic neighborhoods.
+- Sushi: Kyoto also preserves regional sushi styles (pressed mackerel/saba sushi is a local tradition). Small omakase counters in districts like Gion and Shijo serve focused, intimate sushi experiences—again, booking in advance is recommended.
+- Ramen: Kyoto’s ramen scene includes unique local varieties (for example, smoky “burnt” broths and theatrical “fire ramen” shops) and many beloved neighborhood shops. For sampling multiple styles in one place, the station ramen hall collects specialty shops under one roof.
+- Markets & Street Food: Nishiki Market—often called “Kyoto’s Kitchen”—is the prime corridor for tasting local specialties: yuba (tofu skin), pickles, skewers, seasonal fish dishes, senbei, sweets, and ready-to-eat small plates. Teramachi, Shinkyogoku and nearby side streets provide additional stalls, small eateries, and snack options.
+
+Hands‑on Cultural Experiences
+- Tea ceremony and matcha workshops: Kyoto provides many short tea‑ceremony experiences that teach matcha preparation and tea‑room etiquette—ideal as a cultural highlight in a morning or early afternoon.
+- Kimono dressing and Nishijin textile demos: Visitors can experience professional kimono dressing and learn about Nishijin weaving techniques; some centers combine dressing with photography.
+- Pottery and wagashi (traditional confectionery) classes: These workshops offer hands‑on craft learning that pairs well with museum visits or market tastings.
+- Zazen (Zen meditation) and temple‑led experiences: Short meditation sessions at qualified temples give deeper insight into monastic practices and calming cultural rituals.
+
+Neighborhoods and Walks
+- Higashiyama and Gion: For classic historical streets, teahouses, and the chance to see geiko/maiko, the Gion area is essential. Evening strolls in Pontocho and along the Kamogawa river are atmospheric.
+- Arashiyama: Offers a combination of nature (bamboo grove, river views) and major temples (Tenryu‑ji), best visited early or as a full‑day excursion.
+- Northern Kyoto (Kinkaku‑ji, Ryoan‑ji, Ninna‑ji): A compact cluster of highlights focused on gardens and Zen aesthetics.
+- Fushimi: Known for the torii‑gate hike at Fushimi Inari and for its historic sake breweries and tasting facilities.
+
+Practical Notes and Visit Planning
+- Reservations: Many top kaiseki restaurants, omakase sushi counters, high‑end tempura counters, and imperial villa visits require reservations and often fill well in advance; plan these first.
+- Timing: Early mornings are ideal for popular outdoor sites to avoid crowds; mid‑morning is ideal for market visits; dinner slots are often the busiest for upscale restaurants.
+- Pairings: Combine nearby attractions into single blocks to minimize transit time—e.g., Kiyomizu‑dera with Higashiyama lanes and an afternoon tea ceremony in Gion, or Kinkaku‑ji with Ryoan‑ji and a later visit to Ninna‑ji.
+- Transport: Use a mix of subway, JR lines, local buses and short taxi rides; an IC transit card saves time. Expect 20–45 minute transits when moving across the city.
+
+5‑Day Itinerary (conceptual highlights)
+- Day 1: Higashiyama & Gion — Kiyomizu‑dera, historic lanes, tea ceremony, evening kaiseki or izakaya in Gion.
+- Day 2: Arashiyama — Bamboo Grove, Tenryu‑ji garden, riverside walks, tempura lunch; evening in central Kyoto or Pontocho.
+- Day 3: Northern Kyoto gardens — Kinkaku‑ji (Golden Pavilion), Ryoan‑ji, optional Katsura/Shugakuin or Ninna‑ji; evening sushi or tempura counter.
+- Day 4: Fushimi & Uji — Early Fushimi Inari torii hike, sake district and tasting, train to Uji for Byodoin and tea tastings/workshop; ramen or station food hall in evening.
+- Day 5: Museums & Markets — Kyoto National Museum (or MOMAK), Sanjusangendo, Nishiki Market food crawl, hands‑on workshop (pottery/wagashi/kimono), farewell dinner.
+
+Interpretation and Implications
+- Balanced experience: The recommended approach blends big-name sights with intimate cultural experiences. Visiting UNESCO monuments and major temples satisfies the “iconic Kyoto” experience, while markets, workshops, and carefully chosen restaurants provide sensory, participatory layers that make the trip personal and memorable.
+- Seasonality matters: Kyoto’s offerings are deeply seasonal—gardens, kaiseki menus, festival timings, and street food specialties change with the year. Travelers who align visits with cherry blossoms, autumn color, or seasonal menus will get the fullest cultural expression of Kyoto.
+- Booking priorities: Secure limited‑capacity experiences (kaiseki, omakase, imperial villa visits, and some workshops) early. For visitors with specific culinary priorities, reserving at least one formal dining experience (a kaiseki or high‑end tempura) transforms an ordinary trip into a defining culinary memory.
+- Accessibility of variety: Kyoto offers a spectrum from high‑formality rituals (tea ceremony, kaiseki) to casual, communal eating (market stalls, ramen shops). Building a trip that includes both gives a rounded perspective on Kyoto’s food culture and social customs.
+
+Summary of Key Insights
+- Kyoto’s cultural core is best experienced as a layered combination of UNESCO monuments and other major temples, carefully selected museums, and immersive local experiences such as tea ceremonies and craft workshops.
+- Food in Kyoto ranges from world‑class kaiseki and refined tempura counters to vibrant market stalls—both are essential: kaiseki for formal seasonal cuisine, and markets/street food for variety and immediacy.
+- Early timing for outdoor attractions and advance reservations for top dining and limited garden visits will maximize enjoyment and minimize time spent waiting in lines.
+- Neighborhood‑based planning (Higashiyama/Gion, Arashiyama, Northern temples, Fushimi/Uji, central markets/museums) keeps transit efficient and allows meaningful cultural immersion each day.
+- The proposed 5‑day itinerary balances “must‑see” landmarks with tasting tours and hands‑on activity, giving visitors a confident path through Kyoto’s cultural and culinary highlights.
+
+Sources and References
+- UNESCO — Historic Monuments of Ancient Kyoto (World Heritage listing)
+  URL: https://whc.unesco.org/en/list/688
+  Note: Authoritative listing of Kyoto’s UNESCO components used to identify core temples, shrines and historic sites.
+
+- InsideKyoto — Things to do in Kyoto; best lists for kaiseki and tempura
+  URLs:
+    - https://www.insidekyoto.com/things-to-do-in-kyoto
+    - https://www.insidekyoto.com/best-kaiseki-japanese-haute-cuisine-in-kyoto
+    - https://www.insidekyoto.com/best-tempura-in-kyoto
+    - https://www.insidekyoto.com/kyoto-unesco-world-heritage-sites
+  Note: Practical guides and curated restaurant recommendations for kaiseki, tempura, attractions, and neighborhood walks; used to prioritize dining and cultural experiences.
+
+- Japan‑Guide — Kyoto museums, experiences and practical travel information
+  URL: https://www.japan-guide.com/e/e3962.html
+  Note: Overview of Kyoto’s museums, cultural activities, and visitor guidance; used to map museums and hands‑on experiences like tea ceremonies and workshops.
+
+- Seikatsumi — Ramen guide (Kyoto ramen highlights)
+  URL: https://seikatsumi.com/discover-the-best-ramen-in-kyoto-a-noodle-guide/
+  Note: Overview of notable ramen shops and regional ramen styles referenced when selecting ramen highlights and market/ramen‑lane options.
+
+These sources provided the factual backbone for the recommendations, dining highlights, and itinerary structure. They collectively show both the historic significance of Kyoto’s monuments and the practical, sensory ways to experience the city’s food culture.
+
+Final note
+This report delivers an integrated view of Kyoto for culture and food enthusiasts: what to see, where to taste, which experiences to book ahead, and how to structure five days so each day feels full but unhurried. Use the itinerary as a flexible template—swap workshops or restaurant choices to match personal taste and season—and prioritize one or two reserved experiences (a kaiseki dinner, a tea ceremony, or a pottery workshop) to create lasting memories.
 
