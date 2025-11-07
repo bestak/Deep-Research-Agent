@@ -47,7 +47,19 @@ BRAVE_API_KEY=...
 
 ## Usage
 
-Run the agent with a user query:
+```text
+Usage: query [<options>] <query>
+
+Options:
+  --initial-model=<text>  The initial pre-processing LLM model
+  --agent-model=<text>    The agent LLM model
+  -h, --help              Show this message and exit
+
+Arguments:
+  <query>  The query to research using Deep Research agents
+```
+
+For example, run the agent with a user query:
 ```bash
 ./gradlew run --args="'Find recent research comparing Kotlin coroutines with Python async/await'"
 ```
