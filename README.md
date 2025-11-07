@@ -12,6 +12,7 @@ A Kotlin-based AI Deep Research agent that can autonomously plan, search, and sy
 - **Tool-based agent architecture:** Integrates web search and page loading tools to retrieve real-world data.
 - **Extensible:** Easily add new tools or modify planning strategies.
 - **Pre-parsing with fast models:** Uses lightweight models to generate detailed research instructions before executing full research.
+- **Test coverage:** Includes unit and integration tests for core components (agent loop, tool handling, and pre-parser).
 
 ## Architecture
 ```text
