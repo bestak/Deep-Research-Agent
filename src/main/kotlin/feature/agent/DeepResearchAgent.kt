@@ -21,5 +21,4 @@ class DeepResearchAgent(
         println(result)
         return result
     }
-
 }
