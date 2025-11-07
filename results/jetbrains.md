@@ -9,18 +9,19 @@ What are they doing? Describe this business based on the available information.
 ## Final agent output
 
 <p>
-Reasoning:
+
+**Reasoning:**
 Synthesized the previously collected authoritative information into a single, user-friendly research summary. No new external lookup was required for this synthesis.
 
 Result:
 
-Introduction
+### Introduction
 This research set out to create a clear, complete picture of JetBrains as a company: who they are, what they build, how their products are used, and what impact they have on the software development world. The goal was to bring together background, product detail, measurable signals, and a balanced interpretation so a reader unfamiliar with JetBrains could quickly understand the company’s role, strengths, and strategic direction.
 
 Research Process Overview
 First, official company materials and public summaries were gathered to establish basic facts about JetBrains’ history, mission, organizational scale, and recent milestones. Next, the company’s product and service portfolio was examined to see what they offer, whom those offerings serve, and how they fit together. Then the broader effects of those products were explored — how they changed developer expectations, influenced ecosystems, and shaped workflows in industry. Finally, these threads were woven into an integrated narrative that highlights what matters most about JetBrains today: their core activities, market position, achievements, and practical implications for users and organizations.
 
-Detailed Findings
+### Detailed Findings
 
 Company identity and history
 - JetBrains is a private software company founded in 2000 and known for building tools that help software developers be more productive and write higher-quality code. Over time it evolved from a single flagship IDE to a broad suite of developer tools, language work, team services, and education offerings.
@@ -46,7 +47,7 @@ Patterns and relationships
 - Platform + ecosystem: By providing a strong core platform (the IntelliJ architecture) and a marketplace, JetBrains gains both depth (powerful, opinionated features) and extensibility (third-party plugins and integrations).
 - Language and community leadership: Rather than only reacting to language trends, JetBrains has been an active participant — creating languages and tools that the wider industry adopts, which in turn strengthens their products and market position.
 
-Interpretation and Implications
+### Interpretation and Implications
 
 What this means for developers and teams
 - For professional developers and engineering teams, JetBrains tools offer a high-productivity option: deeper code awareness, stronger refactorings, and integrated workflows can reduce friction in everyday tasks. This can translate into faster development, fewer bugs, and more maintainable code.
@@ -58,7 +59,7 @@ Strategic position and outlook
 - Risks and constraints: JetBrains competes with increasingly capable free editors and cloud platforms, must manage regulatory and privacy challenges for AI features, and must continue balancing breadth of products with long-term maintainability.
 - Practical next steps for interested parties: trial the relevant IDE or bundle with a small team, evaluate AI features against internal policies, compare developer productivity gains versus cost, and monitor JetBrains’ evolving strategy in AI and team tooling.
 
-Summary of Key Insights
+### Summary of Key Insights
 - JetBrains is a focused provider of developer productivity tools whose work has influenced mainstream tooling and languages.
 - Their flagship IDEs and the IntelliJ platform set high expectations for code intelligence and developer ergonomics.
 - Kotlin and the IntelliJ platform are two of JetBrains’ most significant contributions to software ecosystems, with measurable industry adoption.
@@ -66,7 +67,7 @@ Summary of Key Insights
 - Recent emphasis on AI and team collaboration shows a strategic push to embed intelligence and tighter workflows into everyday development.
 - Enterprises and professional developers often adopt JetBrains tools for their productivity advantages, while balancing cost and platform choices.
 
-Sources and References
+### Sources and References
 - JetBrains — Company / About page
   URL: https://www.jetbrains.com/company/
   Note: Core company overview, mission statements, and general corporate information.
@@ -99,6 +100,6 @@ Sources and References
   URL: https://en.wikipedia.org/wiki/JetBrains
   Note: Consolidated public timeline and additional background context.
 
-Final note
+**Final note**
 This summary integrates company background, product breadth, measurable signals, and an assessment of industry impact to give a complete, non-technical understanding of JetBrains: what they build, why it matters, and what to consider if you are thinking about using or evaluating their tools.
 </p>
