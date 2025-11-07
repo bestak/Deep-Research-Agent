@@ -41,6 +41,6 @@ class ResearchAgentService(
 
 
     companion object {
-        const val MAX_STEP_COUNT = 10
+        const val MAX_STEP_COUNT = 15
     }
 }

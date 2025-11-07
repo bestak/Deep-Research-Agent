@@ -24,7 +24,10 @@ val toolModule = module {
     }
 
     single {
-        PageLoaderToolExecutor(get())
+        PageLoaderToolExecutor(
+            webPageLoaderService = get(),
+            modelProvider = get()
+        )
     }
 
     single {

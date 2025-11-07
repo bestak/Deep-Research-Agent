@@ -1,12 +1,16 @@
 package cz.bestak.deepresearch.feature.tool.executor.specific
 
+import cz.bestak.deepresearch.feature.llm.domain.Message
+import cz.bestak.deepresearch.feature.llm.service.LLMModelProvider
+import cz.bestak.deepresearch.feature.llm.service.openai.OpenAiModelProvider
 import cz.bestak.deepresearch.feature.tool.PageLoaderTool
 import cz.bestak.deepresearch.feature.tool.connectors.pageloader.WebPageLoaderService
 import cz.bestak.deepresearch.feature.tool.executor.ToolExecutor
 import kotlinx.serialization.json.Json
 
 class PageLoaderToolExecutor(
-    private val webPageLoaderService: WebPageLoaderService
+    private val webPageLoaderService: WebPageLoaderService,
+    private val modelProvider: LLMModelProvider
 ): ToolExecutor {
     override val name: String = PageLoaderTool.NAME
 
@@ -19,7 +23,7 @@ class PageLoaderToolExecutor(
         }
         println("[Load page] Opening page: $url")
         val pageContent = webPageLoaderService.load(url) ?: NO_CONTENT
-        return Json.encodeToString(pageContent)
+        return pageContent
     }
 
     companion object {
