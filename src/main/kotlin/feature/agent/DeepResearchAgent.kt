@@ -10,7 +10,7 @@ class DeepResearchAgent(
     private val modelProvider: LLMModelProvider
 ) {
 
-    suspend fun run(query: String): String {
+    suspend fun run(query: String, fastModel: String, agentModel: String): String {
         val fastLLM = modelProvider.getModel("gpt-3.5-turbo")
         val plan = initialPlanService.create(fastLLM, query)
 
