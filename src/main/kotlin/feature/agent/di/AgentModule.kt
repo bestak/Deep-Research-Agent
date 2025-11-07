@@ -1,6 +1,7 @@
 package cz.bestak.deepresearch.feature.agent.di
 
 import cz.bestak.deepresearch.feature.agent.DeepResearchAgent
+import cz.bestak.deepresearch.feature.agent.executor.ResearchAgent
 import cz.bestak.deepresearch.feature.agent.executor.ResearchAgentImpl
 import cz.bestak.deepresearch.feature.agent.executor.ResearchAgentService
 import cz.bestak.deepresearch.feature.agent.planner.InitialPlanParser
@@ -22,7 +23,7 @@ val agentModule = module {
         InitialPlanService(initialPlanParser = get())
     }
 
-    factory {
+    factory<ResearchAgent> {
         ResearchAgentImpl(
             tools = listOf(
                 get<BrowserTool>(),

@@ -1,6 +1,7 @@
 plugins {
     kotlin("jvm") version "2.2.20"
     kotlin("plugin.serialization") version "2.2.0"
+    application
     jacoco
 }
 
@@ -19,6 +20,7 @@ dependencies {
     implementation("com.aallam.openai:openai-client:4.0.1")
     implementation("io.ktor:ktor-client-apache5:3.3.1")
 
+    implementation("com.github.ajalt.clikt:clikt:5.0.3")
     implementation("io.github.cdimascio:dotenv-kotlin:6.5.1")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.9.0")
 
@@ -36,4 +38,7 @@ tasks.test {
 }
 kotlin {
     jvmToolchain(24)
+}
+application {
+    mainClass.set("cz.bestak.deepresearch.cli.MainKt")
 }
