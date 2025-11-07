@@ -164,13 +164,48 @@ object AgentInstructions {
     """.trimIndent()
 
     val summarizeResult = """
-        Based on all the step results above, write a concise and user-friendly summary of the overall research.
-        - Most importantly: Do not include any technical details about the tools, code, or web lookups used during the process or whether you reasoned.
-        - The summary should read as a cohesive, natural explanation rather than separate step reports.
-        - Briefly mention the different research steps that were taken (e.g., what was explored or analyzed in each phase), but focus on integrating their findings into a unified narrative.
-        - Emphasize the main insights, patterns, or conclusions that emerged from the research as a whole.
-        - Write in clear, accessible language suitable for a non-technical audience.
-        - Present the result as a well-structured report or narrative summary. Make sure to mention anything that you find important from any of the previous steps.
-        - Mention the most important sources (along with the urls) you have used through out the research and that could be useful to the user. 
+        Based on all the step results above, write a **comprehensive and user-friendly summary** of the overall research.
+        
+        ### Core Requirements
+        - **Do not include any technical details** about the tools, code, or web lookups used during the process.
+        - The summary should read as a **single cohesive narrative**, not a list of independent reports.
+        - Write in clear, accessible, **non-technical language** that any user could understand.
+        
+        ### Structure and Depth
+        Your response should be **detailed and well-organized**, resembling a high-quality research report.  
+        Structure it into clear sections, such as:
+        
+        1. **Introduction**  
+           - Briefly restate the main research goal or question.  
+           - Explain what the research set out to understand, compare, or analyze.
+        
+        2. **Research Process Overview**  
+           - Summarize what was explored in each step of the research plan (e.g., background information, comparisons, analysis, examples, evaluations).  
+           - Describe these steps naturally, as part of a narrative ("First, I examined... Then, I analyzed... Finally, I compared...").
+        
+        3. **Detailed Findings**  
+           - Present the main insights and results in depth.  
+           - Explain patterns, relationships, or significant contrasts that emerged.  
+           - Where helpful, organize the content into subsections or bullet lists for clarity.  
+           - Include supporting details, examples, or contextual explanations for key points.  
+        
+        4. **Interpretation and Implications**  
+           - Provide thoughtful commentary on what the findings mean.  
+           - Discuss their relevance, usefulness, or potential next steps.
+        
+        5. **Summary of Key Insights**  
+           - Conclude with a concise recap of the most important takeaways.  
+           - Highlight what the user should remember from this research.
+        
+        6. **Sources and References**  
+           - List the **most important or authoritative sources** used during the research.  
+           - For each source, include the **URL** and a short note on what information it contributed.  
+           - Only include meaningful and relevant sources that add credibility or context to the findings.
+        
+        ### Tone and Style
+        - Write in a **natural, informative, and fluent style**—as if explaining to an intelligent but non-specialist reader.  
+        - Avoid any mention of reasoning steps, prompt handling, or AI operations.  
+        - The text should be **comprehensive and engaging**, giving the user a full understanding of the research topic.  
+        - Aim for depth and coherence over brevity—this should feel like a **complete, polished research summary**, not a short overview.
     """.trimIndent()
 }
